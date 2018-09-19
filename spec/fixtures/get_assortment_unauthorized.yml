@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://online.moysklad.ru/api/remap/1.1/entity/assortment
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - online.moysklad.ru
+      Authorization:
+      - Basic dXNlckBtYWlsLmNvbTpwYXNzd29yZA==
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Server:
+      - nginx/1.10.3
+      Date:
+      - Mon, 16 Apr 2018 08:19:19 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '251'
+      Connection:
+      - close
+      X-Lognex-Auth:
+      - '401001'
+      Www-Authenticate:
+      - Basic realm="Your Realm Here"
+      Cache-Control:
+      - max-age=0
+      X-Lognex-Auth-Message:
+      - "%D0%9D%D0%B5%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9+%D0%BF%D0%B0%D1%80%D0%BE%D0%BB%D1%8C+%D0%B8%D0%BB%D0%B8+%D0%B8%D0%BC%D1%8F+%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8F"
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJlcnJvcnMiOlt7ImVycm9yIjoi0J7RiNC40LHQutCwINCw0YPRgtC10L3R
+        gtC40YTQuNC60LDRhtC40Lg6INCd0LXQv9GA0LDQstC40LvRjNC90YvQuSDQ
+        v9Cw0YDQvtC70Ywg0LjQu9C4INC40LzRjyDQv9C+0LvRjNC30L7QstCw0YLQ
+        tdC70Y8iLCJjb2RlIjoxMDU2LCJtb3JlSW5mbyI6Imh0dHBzOi8vb25saW5l
+        Lm1veXNrbGFkLnJ1L2FwaS9yZW1hcC8xLjEvZG9jI9C+0LHRgNCw0LHQvtGC
+        0LrQsC3QvtGI0LjQsdC+0LotMTA1NiJ9XX0=
+    http_version: 
+  recorded_at: Mon, 16 Apr 2018 08:19:19 GMT
+recorded_with: VCR 4.0.0
