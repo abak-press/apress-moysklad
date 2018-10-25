@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://online.moysklad.ru/api/remap/1.1/entity/foo
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - online.moysklad.ru
+      Authorization:
+      - Basic dXNoYWtvdmE4OHNhc2hhQGdtYWlsLmNvbToxMjM0NTY=
+  response:
+    status:
+      code: 412
+      message: Precondition Failed
+    headers:
+      Server:
+      - nginx/1.10.3
+      Date:
+      - Mon, 16 Apr 2018 08:04:37 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '168'
+      Connection:
+      - close
+      Cache-Control:
+      - max-age=0
+      - max-age=0, no-cache
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJlcnJvcnMiOlt7ImVycm9yIjoi0J3QtdC40LfQstC10YHRgtC90YvQuSDR
+        gtC40L86ICdmb28nIiwiY29kZSI6MTAwNSwibW9yZUluZm8iOiJodHRwczov
+        L29ubGluZS5tb3lza2xhZC5ydS9hcGkvcmVtYXAvMS4xL2RvYyPQvtCx0YDQ
+        sNCx0L7RgtC60LAt0L7RiNC40LHQvtC6LTEwMDUifV19
+    http_version: 
+  recorded_at: Mon, 16 Apr 2018 08:04:37 GMT
+recorded_with: VCR 4.0.0

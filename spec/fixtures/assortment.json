@@ -1,0 +1,188 @@
+{
+  "meta": {
+    "href": "https://online.moysklad.ru/api/remap/1.1/entity/product/1a3cc760-eaf6-11e7-6b01-4b1d001d43a0",
+    "metadataHref": "https://online.moysklad.ru/api/remap/1.1/entity/product/metadata",
+    "type": "product",
+    "mediaType": "application/json",
+    "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=1a3cc220-eaf6-11e7-6b01-4b1d001d439e"
+  },
+
+  "id": "1a3cc760-eaf6-11e7-6b01-4b1d001d43a0",
+  "accountId": "5dde328f-99e6-11e7-7a69-971100003000",
+
+  "owner": {
+    "meta": {
+      "href": "https://online.moysklad.ru/api/remap/1.1/entity/employee/5e09622c-99e6-11e7-7a34-5acf0002e5f6",
+      "metadataHref": "https://online.moysklad.ru/api/remap/1.1/entity/employee/metadata",
+      "type": "employee",
+      "mediaType": "application/json",
+      "uuidHref": "https://online.moysklad.ru/app/#employee/edit?id=5e09622c-99e6-11e7-7a34-5acf0002e5f6"
+    }
+  },
+
+  "shared": true,
+
+  "group": {
+    "meta": {
+      "href": "https://online.moysklad.ru/api/remap/1.1/entity/group/5dde5339-99e6-11e7-7a69-971100003001",
+      "metadataHref": "https://online.moysklad.ru/api/remap/1.1/entity/group/metadata",
+      "type": "group",
+      "mediaType": "application/json"
+    }
+  },
+
+  "version": 1,
+  "updated": "2017-12-27 16:11:07",
+
+  "name": "Конина",
+  "description": "Вкусная, полезная",
+
+  "code": "4547",
+  "externalCode": "k8wwtsTajfpNw9MiHwbTq1",
+
+  "archived": false,
+  "pathName": "Первый уровень/Второй уровень",
+
+  "productFolder": {
+    "meta": {
+      "href": "https://online.moysklad.ru/api/remap/1.1/entity/productfolder/fc2510e0-c8fb-11e7-7a34-5acf000146e0",
+      "metadataHref": "https://online.moysklad.ru/api/remap/1.1/entity/productfolder/metadata",
+      "type": "productfolder",
+      "mediaType": "application/json",
+      "uuidHref": "https://online.moysklad.ru/app/#good/edit?id=fc2510e0-c8fb-11e7-7a34-5acf000146e0"
+    }
+  },
+
+  "vat": 0,
+  "effectiveVat": 0,
+
+  "uom": {
+    "meta": {
+      "href": "https://online.moysklad.ru/api/remap/1.1/entity/uom/19f1edc0-fc42-4001-94cb-c9ec9c62ec10",
+      "metadataHref": "https://online.moysklad.ru/api/remap/1.1/entity/uom/metadata",
+      "type": "uom",
+      "mediaType": "application/json"
+    }
+  },
+
+  "image": {
+    "meta": {
+      "href": "https://online.moysklad.ru/api/remap/1.1/download/b878dab8-eaf5-11e7-7a31-d0fd001d9a46",
+      "mediaType": "application/octet-stream"
+    },
+
+    "title": "bug",
+    "filename": "bug.jpg",
+    "size": 26316,
+    "updated": "2017-12-27 14:04:34",
+
+    "miniature": {
+      "href": "https://online.moysklad.ru/api/remap/1.1/download/b878dab8-eaf5-11e7-7a31-d0fd001d9a46?miniature=true",
+      "mediaType": "image/png"
+    },
+
+    "tiny": {
+      "href": "https://online.moysklad.ru/static/tinyimage/5dde328f-99e6-11e7-7a69-971100003000/tinyimage/b88edb6e-eaf5-11e7-7a31-d0fd001d9a47/t.png",
+      "mediaType": "image/png"
+    }
+  },
+
+  "minPrice": 20000.0,
+
+  "salePrices": [
+    {
+      "value": 0.0,
+
+      "currency": {
+        "meta": {
+          "href": "https://online.moysklad.ru/api/remap/1.1/entity/currency/5e13f03c-99e6-11e7-7a34-5acf0002e624",
+          "metadataHref": "https://online.moysklad.ru/api/remap/1.1/entity/currency/metadata",
+          "type": "currency",
+          "mediaType": "application/json",
+          "uuidHref": "https://online.moysklad.ru/app/#currency/edit?id=5e13f03c-99e6-11e7-7a34-5acf0002e624"
+        }
+      },
+
+      "priceType": "опт"
+    }, {
+      "value": 25000.0,
+
+      "currency": {
+        "meta": {
+          "href": "https://online.moysklad.ru/api/remap/1.1/entity/currency/5e13f03c-99e6-11e7-7a34-5acf0002e624",
+          "metadataHref": "https://online.moysklad.ru/api/remap/1.1/entity/currency/metadata",
+          "type": "currency",
+          "mediaType": "application/json",
+          "uuidHref": "https://online.moysklad.ru/app/#currency/edit?id=5e13f03c-99e6-11e7-7a34-5acf0002e624"
+        }
+      },
+
+      "priceType": "Розничная цена"
+    }
+  ],
+
+  "supplier": {
+    "meta": {
+      "href": "https://online.moysklad.ru/api/remap/1.1/entity/counterparty/5e13e34d-99e6-11e7-7a34-5acf0002e620",
+      "metadataHref": "https://online.moysklad.ru/api/remap/1.1/entity/counterparty/metadata",
+      "type": "counterparty",
+      "mediaType": "application/json",
+      "uuidHref": "https://online.moysklad.ru/app/#company/edit?id=5e13e34d-99e6-11e7-7a34-5acf0002e620"
+    }
+  },
+
+  "country": {
+    "meta": {
+      "href": "https://online.moysklad.ru/api/remap/1.1/entity/country/59fcf432-65d3-4180-8420-fe61c7816581",
+      "metadataHref": "https://online.moysklad.ru/api/remap/1.1/entity/country/metadata",
+      "type": "country",
+      "mediaType": "application/json"
+    }
+  },
+
+  "buyPrice": {
+    "value": 10000.0,
+
+    "currency": {
+      "meta": {
+        "href": "https://online.moysklad.ru/api/remap/1.1/entity/currency/5e13f03c-99e6-11e7-7a34-5acf0002e624",
+        "metadataHref": "https://online.moysklad.ru/api/remap/1.1/entity/currency/metadata",
+        "type": "currency",
+        "mediaType": "application/json",
+        "uuidHref": "https://online.moysklad.ru/app/#currency/edit?id=5e13f03c-99e6-11e7-7a34-5acf0002e624"
+      }
+    }
+  },
+
+  "article": "К-001",
+  "weighed": true,
+  "weight": 1000.0,
+  "volume": 500.0,
+
+  "packs": [
+    {
+      "id": "1a3cca25-eaf6-11e7-6b01-4b1d001d43a3",
+
+      "uom": {
+        "meta": {
+          "href": "https://online.moysklad.ru/api/remap/1.1/entity/uom/2ec1170c-3f69-4409-87bb-c68e0011b275",
+          "metadataHref": "https://online.moysklad.ru/api/remap/1.1/entity/uom/metadata",
+          "type": "uom",
+          "mediaType": "application/json"
+        }
+      },
+
+      "quantity": 1.0
+    }
+  ],
+
+  "barcodes": ["2000000000619"],
+  "minimumBalance": 100.0,
+  "modificationsCount": 1,
+  "isSerialTrackable": false,
+
+  "stock": 0.0,
+  "reserve": 0.0,
+  "inTransit": 0.0,
+  "quantity": 0.0
+}

@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://online.moysklad.ru/api/remap/1.1/entity/assortment?scope=foo
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - online.moysklad.ru
+      Authorization:
+      - Basic dXNoYWtvdmE4OHNhc2hhQGdtYWlsLmNvbToxMjM0NTY=
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Server:
+      - nginx/1.10.3
+      Date:
+      - Mon, 16 Apr 2018 08:08:36 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '289'
+      Connection:
+      - close
+      Cache-Control:
+      - max-age=0
+      - max-age=0, no-cache
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJlcnJvcnMiOlt7ImVycm9yIjoi0J3QtdCy0LXRgNC90L7QtSDQt9C90LDR
+        h9C10L3QuNC1ICdmb28nINC/0LDRgNCw0LzQtdGC0YDQsCDRhNC40LvRjNGC
+        0YDQsNGG0LjQuCAnc2NvcGUnLCDQtNC+0L/Rg9GB0YLQuNC80YvQtSDQt9C9
+        0LDRh9C10L3QuNGPOiAncHJvZHVjdCx2YXJpYW50LGNvbnNpZ25tZW50JyIs
+        ImNvZGUiOjEwNDEsIm1vcmVJbmZvIjoiaHR0cHM6Ly9vbmxpbmUubW95c2ts
+        YWQucnUvYXBpL3JlbWFwLzEuMS9kb2Mj0L7QsdGA0LDQsdC+0YLQutCwLdC+
+        0YjQuNCx0L7Qui0xMDQxIn1dfQ==
+    http_version: 
+  recorded_at: Mon, 16 Apr 2018 08:08:36 GMT
+recorded_with: VCR 4.0.0
