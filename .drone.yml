@@ -1,0 +1,30 @@
+build:
+  test:
+    image: abakpress/dind-testing
+    pull: true
+    privileged: true
+    volumes:
+      - /home/data/drone/images:/images
+      - /home/data/drone/gems:/bundle
+    environment:
+      - COMPOSE_FILE_EXT=drone
+      - RUBY_IMAGE_TAG=2.2-latest
+    commands:
+      - prepare-build
+
+      - fetch-images
+        --image abakpress/ruby-app:$RUBY_IMAGE_TAG
+
+      - dip provision
+      - dip rspec
+
+  release:
+    image: abakpress/gem-publication:latest
+    pull: true
+    when:
+      event: push
+      branch: master
+    volumes:
+      - /home/data/drone/rubygems:/root/.gem
+    commands:
+      - release-gem --public
