@@ -19,13 +19,12 @@ describe Apress::Moysklad::Readers::Assortment do
     end
 
     it 'yields all rows from moysklad assortment' do
-      is_expected.to have(5).items & all(be_a(Hash) & include(:id, :code, :name))
+      is_expected.to have(4).items & all(be_a(Hash) & include(:id, :code, :name))
 
-      expect(rows[0]).to include code: '00010', name: '123'
-      expect(rows[1]).to include code: '00007', name: '1234567890' * 8
-      expect(rows[2]).to include code: '00003', name: 'Ложка'
-      expect(rows[3]).to include code: '4547', name: 'Конина'
-      expect(rows[4]).to include code: '876555', name: 'балон'
+      expect(rows[0]).to include code: '00004', name: 'Стул'
+      expect(rows[1]).to include code: '00001', name: 'Платье со сборкой на боку'
+      expect(rows[2]).to include code: '00002', name: 'Толстовка'
+      expect(rows[3]).to include code: '00003', name: 'Стакан стеклянный'
     end
 
     context 'when api errors' do
@@ -40,7 +39,20 @@ describe Apress::Moysklad::Readers::Assortment do
       context 'when retriable' do
         let(:error) { Apress::Moysklad::Api::Error.new('Internal server error', '500') }
 
-        it { is_expected.to have(5).items }
+        it { is_expected.to have(4).items }
+
+        context 'when 429' do
+          let(:error) { Apress::Moysklad::Api::Error.new('Too Many Requests', '429') }
+          before { expect_any_instance_of(described_class).to receive(:sleep) }
+
+          it { is_expected.to have(4).items }
+        end
+
+        context 'when timeout error' do
+          let(:error) { Timeout::Error.new }
+
+          it { is_expected.to have(4).items }
+        end
       end
 
       context 'when not retriable' do
