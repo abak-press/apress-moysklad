@@ -1,8 +1,8 @@
 version: '2'
 
 environment:
-  DOCKER_RUBY_VERSION: 2.3
-  RUBY_IMAGE_TAG: 2.3-latest
+  DOCKER_RUBY_VERSION: 2.4
+  RUBY_IMAGE_TAG: 2.4-latest
   COMPOSE_FILE_EXT: development
   RAILS_ENV: test
 

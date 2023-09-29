@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'net/http'
 require 'openssl'
 require 'uri'
@@ -15,10 +17,13 @@ module Apress
       #   client.get(:assortment, limit: 2)
       #   => {:context=>...}
       class Client
-        API_URL = 'https://online.moysklad.ru/api/remap'.freeze
-        API_VERSION = '1.1'.freeze
+        API_URL = 'https://api.moysklad.ru/api/remap'
+        API_VERSION = '1.2'
 
         TIMEOUT = 60 # seconds
+        HEADERS = {
+          'Accept-Encoding' => 'gzip',
+        }.freeze
 
         attr_reader :login, :password
 
@@ -31,9 +36,15 @@ module Apress
           uri = api_uri(entity)
           uri.query = URI.encode_www_form(params) unless params.empty?
 
+          send_request(uri)
+        end
+
+        def send_request(uri)
           req = Net::HTTP::Get.new(uri)
           req.basic_auth login, password
-
+          HEADERS.each do |header, value|
+            req.add_field(header, value)
+          end
           res = Net::HTTP.start(uri.hostname, uri.port, http_options) do |http|
             http.request(req)
           end
@@ -51,7 +62,7 @@ module Apress
           {
             open_timeout: TIMEOUT,
             read_timeout: TIMEOUT,
-            use_ssl: true
+            use_ssl: true,
           }
         end
 
@@ -63,7 +74,7 @@ module Apress
               raise Api::Error.new(err[:error], err[:code])
             end
 
-            raise Api::Error.new(res.msg, res.code) unless res.is_a? Net::HTTPOK
+            raise Api::Error.new(res.msg, res.code, res.each_header.to_h) unless res.is_a? Net::HTTPOK
           end
         end
       end
