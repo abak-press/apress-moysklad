@@ -21,7 +21,6 @@ module Apress
           :name,
           :description,
 
-          :minPrice,
           :pathName,
           :version,
 
@@ -40,8 +39,8 @@ module Apress
           :effectiveVat,
 
           meta: [:type].freeze,
-          image: [:title, :filename, :size, :updated, meta: [:href, :mediaType].freeze].freeze,
-
+          images: [meta: [:href, :size].freeze].freeze,
+          minPrice: [:value].freeze,
           buyPrice: [:value].freeze,
           salePrices: [:value, :priceType].freeze
         ].freeze
@@ -60,8 +59,9 @@ module Apress
           }
 
           record.merge! filter(row)
-          auth_to_link! record[:image][:meta][:href] if record.key? :image
-
+          if record[:images] && record[:images][:meta][:size] > 0
+            record[:image_urls] = image_urls(record[:images][:meta][:href])
+          end
           record
         end
 
@@ -88,6 +88,14 @@ module Apress
               result[key] = row[key]
             end
           end
+        end
+
+        def image_urls(url)
+          images = []
+          Readers::Images.new(login: client.login, password: client.password, url: url).each_row do |row|
+            images << auth_to_link!(row)
+          end
+          images
         end
       end
     end

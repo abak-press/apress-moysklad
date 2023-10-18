@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.moysklad.ru/api/remap/1.2/entity/foo
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.moysklad.ru
+      Authorization:
+      - Basic YWRtaW5AdG9rYXJldmF0YXRpYW5hOjQxZjU1ZTgxM2FiYg==
+  response:
+    status:
+      code: 412
+      message: Precondition Failed
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 27 Sep 2023 06:14:00 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '172'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - max-age=0, no-cache
+      X-Lognex-Reset:
+      - '0'
+      X-Lognex-Retry-After:
+      - '0'
+      X-Lognex-Retry-Timeinterval:
+      - '3000'
+      X-Ratelimit-Remaining:
+      - '44'
+      X-Ratelimit-Limit:
+      - '45'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        ewogICJlcnJvcnMiIDogWyB7CiAgICAiZXJyb3IiIDogItCd0LXQuNC30LLQtdGB0YLQvdGL0Lkg0YLQuNC/OiAnZm9vJyIsCiAgICAiY29kZSIgOiAxMDA1LAogICAgIm1vcmVJbmZvIiA6ICJodHRwczovL2Rldi5tb3lza2xhZC5ydS9kb2MvYXBpL3JlbWFwLzEuMi8jZXJyb3JfMTAwNSIKICB9IF0KfQ==
+  recorded_at: Wed, 27 Sep 2023 06:14:00 GMT
+recorded_with: VCR 6.0.0

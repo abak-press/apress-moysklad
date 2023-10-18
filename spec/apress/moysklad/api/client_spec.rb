@@ -16,7 +16,7 @@ describe Apress::Moysklad::Api::Client do
         VCR.use_cassette 'get_assortment' do
           is_expected.to be_a(Hash) & include(:context, :meta, :rows)
 
-          expect(subject[:rows]).to have(6).items
+          expect(subject[:rows]).to have(8).items
         end
       end
 
@@ -33,14 +33,12 @@ describe Apress::Moysklad::Api::Client do
       end
 
       context 'with invalid params' do
-        subject { client.get(:assortment, scope: 'foo') }
+        subject { client.get(:assortment, groupBy: 'foo') }
 
         it 'raise api error' do
           VCR.use_cassette 'get_assortment_with_invalid_params' do
-            expect { subject }.to raise_error Apress::Moysklad::Api::Error, "1041 - Неверное значение 'foo' "\
-                                                                           "параметра фильтрации 'scope', "\
-                                                                           "допустимые значения: "\
-                                                                           "'product,variant,consignment'"
+            expect { subject }.to raise_error Apress::Moysklad::Api::Error, "1002 - Неопознанный путь: "\
+                                                                           "https://api.moysklad.ru/api/remap/1.2/entity/assortment"
           end
         end
       end

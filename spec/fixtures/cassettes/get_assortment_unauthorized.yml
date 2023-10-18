@@ -2,19 +2,20 @@
 http_interactions:
 - request:
     method: get
-    uri: https://online.moysklad.ru/api/remap/1.1/entity/assortment
+    uri: https://api.moysklad.ru/api/remap/1.2/entity/assortment
     body:
       encoding: US-ASCII
       string: ''
     headers:
       Accept-Encoding:
+      - gzip
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
       - "*/*"
       User-Agent:
       - Ruby
       Host:
-      - online.moysklad.ru
+      - api.moysklad.ru
       Authorization:
       - Basic dXNlckBtYWlsLmNvbTpwYXNzd29yZA==
   response:
@@ -23,19 +24,20 @@ http_interactions:
       message: Unauthorized
     headers:
       Server:
-      - nginx/1.10.3
+      - nginx
       Date:
-      - Mon, 16 Apr 2018 08:19:19 GMT
+      - Wed, 27 Sep 2023 06:13:59 GMT
       Content-Type:
       - application/json;charset=utf-8
       Content-Length:
-      - '251'
+      - '223'
       Connection:
-      - close
+      - keep-alive
       X-Lognex-Auth:
       - '401001'
       Www-Authenticate:
-      - Basic realm="Your Realm Here"
+      - Basic realm="MoySklad JSON API 1.2"
+      - Bearer realm="MoySklad JSON API 1.2"
       Cache-Control:
       - max-age=0
       X-Lognex-Auth-Message:
@@ -43,12 +45,6 @@ http_interactions:
     body:
       encoding: ASCII-8BIT
       string: !binary |-
-        eyJlcnJvcnMiOlt7ImVycm9yIjoi0J7RiNC40LHQutCwINCw0YPRgtC10L3R
-        gtC40YTQuNC60LDRhtC40Lg6INCd0LXQv9GA0LDQstC40LvRjNC90YvQuSDQ
-        v9Cw0YDQvtC70Ywg0LjQu9C4INC40LzRjyDQv9C+0LvRjNC30L7QstCw0YLQ
-        tdC70Y8iLCJjb2RlIjoxMDU2LCJtb3JlSW5mbyI6Imh0dHBzOi8vb25saW5l
-        Lm1veXNrbGFkLnJ1L2FwaS9yZW1hcC8xLjEvZG9jI9C+0LHRgNCw0LHQvtGC
-        0LrQsC3QvtGI0LjQsdC+0LotMTA1NiJ9XX0=
-    http_version: 
-  recorded_at: Mon, 16 Apr 2018 08:19:19 GMT
-recorded_with: VCR 4.0.0
+        eyJlcnJvcnMiOlt7ImVycm9yIjoi0J7RiNC40LHQutCwINCw0YPRgtC10L3RgtC40YTQuNC60LDRhtC40Lg6INCd0LXQv9GA0LDQstC40LvRjNC90YvQuSDQv9Cw0YDQvtC70Ywg0LjQu9C4INC40LzRjyDQv9C+0LvRjNC30L7QstCw0YLQtdC70Y8iLCJjb2RlIjoxMDU2LCJtb3JlSW5mbyI6Imh0dHBzOi8vZGV2Lm1veXNrbGFkLnJ1L2RvYy9hcGkvcmVtYXAvMS4yLyNlcnJvcl8xMDU2In1dfQ==
+  recorded_at: Wed, 27 Sep 2023 06:13:59 GMT
+recorded_with: VCR 6.0.0
