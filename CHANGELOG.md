@@ -1,6 +1,11 @@
+# v0.2.0
+
+* 2023-10-18 [d2d0f66](../../commit/d2d0f66) - __(git2-railsc)__ Release 0.2.0 
+* 2023-09-26 [16be58f](../../commit/16be58f) - __(Petr Tsyganok)__ feature: migrate api version to 1.2 
+https://jira.railsc.ru/browse/GOODS-3723
+
 # v0.1.1
 
-* 2021-07-26 [bfb2ac6](../../commit/bfb2ac6) - __(TamarinEA)__ Release 0.1.1 
 * 2021-07-26 [464550a](../../commit/464550a) - __(TamarinEA)__ chore: add ruby 2.4 and 2.5 support 
 
 # v0.1.0
