@@ -7,7 +7,7 @@ module Apress
       #
       class BaseReader
         RETRY_ATTEMPTS = 5
-        RETRY_CODES = [429, 500, 502, 503, 504, 1999].freeze
+        RETRY_CODES = [429, 500, 502, 503, 504, 1999, 1049, 1059].freeze
         MANY_REQUEST_CODE = 429
         ROWS_BATCH = 100
 

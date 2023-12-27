@@ -64,5 +64,15 @@ describe Apress::Moysklad::Api::Client do
         end
       end
     end
+
+    context 'when 503 error' do
+      subject { client.get(:assortment) }
+
+      it do
+        VCR.use_cassette 'get_assortment_503' do
+          expect { subject }.to raise_error Apress::Moysklad::Api::Error, '503 - Service Unavailable'
+        end
+      end
+    end
   end
 end

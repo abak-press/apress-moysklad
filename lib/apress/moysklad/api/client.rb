@@ -67,6 +67,13 @@ module Apress
         end
 
         def parse_response(res)
+          headers = res.each_header.to_h
+          is_success = res.is_a? Net::HTTPOK
+
+          if !is_success && !headers['content-type'].to_s.include?('json')
+            raise Api::Error.new(res.msg, res.code, headers)
+          end
+
           Oj.load(res.body, symbol_keys: true, mode: :compat).tap do |data|
             if data.key? :errors
               err = data[:errors].first
@@ -74,7 +81,7 @@ module Apress
               raise Api::Error.new(err[:error], err[:code])
             end
 
-            raise Api::Error.new(res.msg, res.code, res.each_header.to_h) unless res.is_a? Net::HTTPOK
+            raise Api::Error.new(res.msg, res.code, headers) unless is_success
           end
         end
       end
