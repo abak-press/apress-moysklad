@@ -1,6 +1,11 @@
+# v0.2.1
+
+* 2024-02-14 [ffa29b0](../../commit/ffa29b0) - __(git1-railsc)__ Release 0.2.1 
+* 2023-12-27 [cd2ec99](../../commit/cd2ec99) - __(Petr Tsyganok)__ fix: raise error when without json body 
+https://jira.railsc.ru/browse/GOODS-3819
+
 # v0.2.0
 
-* 2023-10-18 [d2d0f66](../../commit/d2d0f66) - __(git2-railsc)__ Release 0.2.0 
 * 2023-09-26 [16be58f](../../commit/16be58f) - __(Petr Tsyganok)__ feature: migrate api version to 1.2 
 https://jira.railsc.ru/browse/GOODS-3723
 
