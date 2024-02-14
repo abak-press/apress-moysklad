@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.moysklad.ru/api/remap/1.2/entity/assortment
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.moysklad.ru
+      Authorization:
+      - Basic YWRtaW5AdG9rYXJldmF0YXRpYW5hOjQxZjU1ZTgxM2FiYg==
+  response:
+    status:
+      code: 503
+      message: Service Unavailable
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 27 Sep 2023 06:13:58 GMT
+      Content-Type:
+      - text/html;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - no-cache
+      X-Lognex-Reset:
+      - '0'
+      X-Lognex-Retry-After:
+      - '0'
+      X-Lognex-Retry-Timeinterval:
+      - '3000'
+      X-Ratelimit-Remaining:
+      - '44'
+      X-Ratelimit-Limit:
+      - '45'
+      Strict-Transport-Security:
+      - max-age=15552000
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        <html><head><title>Error</title></head><body>503 - Service Unavailable</body></html>
+  recorded_at: Wed, 27 Sep 2023 06:13:58 GMT
+recorded_with: VCR 6.0.0
