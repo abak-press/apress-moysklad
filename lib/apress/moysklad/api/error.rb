@@ -14,7 +14,7 @@ module Apress
         end
 
         def retry_interval
-          headers['x-lognex-retry-timeinterval'].to_i / 1000
+          (headers['x-lognex-retry-after'].to_f / 1000).nonzero?
         end
       end
     end

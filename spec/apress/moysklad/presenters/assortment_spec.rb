@@ -88,5 +88,22 @@ describe Apress::Moysklad::Presenters::Assortment do
     it 'return hash' do
       is_expected.to eq(expected_row)
     end
+
+    context 'when retry error' do
+      let(:error) { Apress::Moysklad::Api::Error.new('Too Many Requests', '429') }
+
+      before do
+        allow_any_instance_of(Apress::Moysklad::Readers::Images).to receive(:sleep)
+        allow_any_instance_of(Apress::Moysklad::Api::Client).to receive(:send_request) do
+          allow_any_instance_of(Apress::Moysklad::Api::Client).to receive(:send_request).and_call_original
+
+          raise error # only first time
+        end
+      end
+
+      it do
+        is_expected.to eq(expected_row)
+      end
+    end
   end
 end
