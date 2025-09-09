@@ -28,4 +28,5 @@ Gem::Specification.new do |gem|
 
   # test coverage tools
   gem.add_development_dependency 'simplecov', '~> 0.10.0'
+  gem.add_development_dependency 'pry-byebug'
 end

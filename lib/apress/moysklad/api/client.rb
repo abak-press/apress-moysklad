@@ -52,6 +52,10 @@ module Apress
           parse_response(res)
         end
 
+        def category_param_for_filter(category)
+          "productFolder=#{api_uri('productfolder')}/#{category}"
+        end
+
         private
 
         def api_uri(entity)
