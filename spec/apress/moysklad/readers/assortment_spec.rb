@@ -7,6 +7,10 @@ describe Apress::Moysklad::Readers::Assortment do
 
   its(:client) { is_expected.to be_a Apress::Moysklad::Api::Client }
 
+  describe '.allowed_options' do
+    it { expect(described_class.allowed_options).to eq [:login, :password, :categories] }
+  end
+
   describe '#each_row' do
     let(:rows) { [] }
 
@@ -25,6 +29,54 @@ describe Apress::Moysklad::Readers::Assortment do
       expect(rows[1]).to include code: '00001', name: 'Платье со сборкой на боку'
       expect(rows[2]).to include code: '00002', name: 'Толстовка'
       expect(rows[3]).to include code: '00003', name: 'Стакан стеклянный'
+    end
+
+    context 'when categories provided' do
+      let(:reader) do
+        described_class.new(
+          login: 'test@example.com',
+          password: '123456',
+          categories: category_id
+        )
+      end
+
+      context 'category' do
+        let(:category_id) { '3f89784b-e44e-11ef-0a80-07a700549e06' }
+
+        subject do
+          VCR.use_cassette 'read_assortment_with_category' do
+            reader.each_row { |row| rows << row }
+          end
+
+          rows
+        end
+
+        it 'yields products of this category and its subcategories' do
+          is_expected.to have(3).items & all(be_a(Hash) & include(:id, :code, :name))
+
+          expect(rows[0]).to include code: '00011', name: 'Товар 1 На заказ'
+          expect(rows[1]).to include code: '00008', name: 'Служебная метка 6 (long_desc)'
+          expect(rows[2]).to include code: '00009', name: 'Цена Точная'
+        end
+      end
+
+      context 'subcategory' do
+        let(:category_id) { 'b426bcff-ef51-11ef-0a80-085800428c6e' }
+
+        subject do
+          VCR.use_cassette 'read_assortment_with_subcategory' do
+            reader.each_row { |row| rows << row }
+          end
+
+          rows
+        end
+
+        it 'yields products of this subcategory' do
+          is_expected.to have(1).items & all(be_a(Hash) & include(:id, :code, :name))
+
+          expect(rows[0]).to include code: '00011', name: 'Товар 1 На заказ'
+        end
+      end
     end
 
     context 'when api errors' do

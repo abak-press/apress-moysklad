@@ -1,0 +1,26 @@
+{
+  "meta" : {
+    "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/3f89784b-e44e-11ef-0a80-07a700549e06",
+    "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/metadata",
+    "type" : "productfolder",
+    "mediaType" : "application/json",
+    "uuidHref" : "https://online.moysklad.ru/app/#good/edit?id=3f89784b-e44e-11ef-0a80-07a700549e06"
+  },
+  "id" : "3f89784b-e44e-11ef-0a80-07a700549e06",
+  "accountId" : "1e079fd4-f240-11ee-0a80-0681000027c7",
+  "shared" : true,
+  "group" : {
+    "meta" : {
+      "href" : "https://api.moysklad.ru/api/remap/1.2/entity/group/1e081f6b-f240-11ee-0a80-0681000027c8",
+      "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/group/metadata",
+      "type" : "group",
+      "mediaType" : "application/json"
+    }
+  },
+  "updated" : "2025-02-06 08:50:19.632",
+  "name" : "Товары интернет-магазинов",
+  "externalCode" : "rq4CCy3EgeAHzCOWoZLh60",
+  "archived" : false,
+  "pathName" : "",
+  "useParentVat" : true
+}
