@@ -1,5 +1,4 @@
 /.bundle/
-/Gemfile.lock
 /coverage/
 /doc/
 /pkg/
@@ -11,4 +10,3 @@
 mkmf.log
 /.rvmrc
 /.idea/
-gemfiles/

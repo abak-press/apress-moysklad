@@ -37,5 +37,4 @@ interaction:
 
 provision:
   - docker volume create --name bundler_data
-  - dip clean
   - dip bundle install
