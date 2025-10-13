@@ -1,6 +1,12 @@
+# v0.3.0
+
+* 2025-10-02 [da761b8](../../commit/da761b8) - __(tsyganok)__ Release 0.3.0 
+* 2025-10-02 [716be30](../../commit/716be30) - __(tsyganok)__ chore: add lock files 
+* 2025-08-20 [14ea26f](../../commit/14ea26f) - __(tsyganok)__ feat: поправлен заголовок при ошибке 429, добавлен счетчик запросов 
+https://jira.railsc.ru/browse/GOODS-4745
+
 # v0.2.1
 
-* 2024-02-14 [ffa29b0](../../commit/ffa29b0) - __(git1-railsc)__ Release 0.2.1 
 * 2023-12-27 [cd2ec99](../../commit/cd2ec99) - __(Petr Tsyganok)__ fix: raise error when without json body 
 https://jira.railsc.ru/browse/GOODS-3819
 

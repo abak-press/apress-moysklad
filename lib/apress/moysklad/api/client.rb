@@ -78,7 +78,7 @@ module Apress
             raise Api::Error.new(res.msg, res.code, headers)
           end
 
-          Oj.load(res.body, symbol_keys: true, mode: :compat).tap do |data|
+          response = Oj.load(res.body, symbol_keys: true, mode: :compat).tap do |data|
             if data.key? :errors
               err = data[:errors].first
 
@@ -87,6 +87,9 @@ module Apress
 
             raise Api::Error.new(res.msg, res.code, headers) unless is_success
           end
+          Api::RequestLimit.new(headers).call
+
+          response
         end
       end
     end

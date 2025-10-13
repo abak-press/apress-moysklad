@@ -10,6 +10,7 @@ module Apress
         RETRY_CODES = [429, 500, 502, 503, 504, 1999, 1049, 1059].freeze
         MANY_REQUEST_CODE = 429
         ROWS_BATCH = 100
+        SLEEP_TIME = 60
 
         class << self
           def allowed_options
@@ -65,7 +66,7 @@ module Apress
 
           raise if (attempts -= 1) <= 0
 
-          sleep(e.retry_interval) if e.is_a?(Api::Error) && e.code == MANY_REQUEST_CODE
+          sleep(e.retry_interval || SLEEP_TIME) if e.is_a?(Api::Error) && e.code == MANY_REQUEST_CODE
           retry
         end
       end
