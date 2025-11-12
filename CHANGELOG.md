@@ -1,6 +1,11 @@
+# v0.4.0
+
+* 2025-11-12 [677922b](../../commit/677922b) - __(git3-railsc)__ Release 0.4.0 
+* 2025-09-09 [954e1c9](../../commit/954e1c9) - __(Mikhail Nelaev)__ feat: загрузка товаров по категориям и загрузчик категорий 
+https://jira.railsc.ru/browse/GOODS-4783
+
 # v0.3.0
 
-* 2025-10-02 [da761b8](../../commit/da761b8) - __(tsyganok)__ Release 0.3.0 
 * 2025-10-02 [716be30](../../commit/716be30) - __(tsyganok)__ chore: add lock files 
 * 2025-08-20 [14ea26f](../../commit/14ea26f) - __(tsyganok)__ feat: поправлен заголовок при ошибке 429, добавлен счетчик запросов 
 https://jira.railsc.ru/browse/GOODS-4745
