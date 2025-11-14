@@ -38,7 +38,7 @@ module Apress
             check_rows_size! data, offset
             data[:rows].each { |row| yield presenter.expose(row) }
 
-            break if (offset += ROWS_BATCH) >= data[:meta][:size]
+            break if (offset += self.class::ROWS_BATCH) >= data[:meta][:size]
           end
         end
 
@@ -54,7 +54,7 @@ module Apress
 
         def check_rows_size!(data, offset)
           actual_size = data[:rows].size
-          expected_size = [data[:meta][:size] - offset, ROWS_BATCH].min
+          expected_size = [data[:meta][:size] - offset, self.class::ROWS_BATCH].min
 
           raise "Invalid rows size, expect #{expected_size}, got #{actual_size}" if actual_size != expected_size
         end
