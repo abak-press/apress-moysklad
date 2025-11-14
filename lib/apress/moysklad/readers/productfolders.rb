@@ -23,8 +23,8 @@ module Apress
           @presenter ||= Presenters::Productfolders.new
         end
 
-        def get_data(_offset)
-          client.get(:productfolder, limit: ROWS_BATCH)
+        def get_data(offset)
+          client.get(:productfolder, offset: offset, limit: ROWS_BATCH)
         end
       end
     end
