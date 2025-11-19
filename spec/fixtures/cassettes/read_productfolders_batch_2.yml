@@ -1,0 +1,3457 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.moysklad.ru/api/remap/1.2/entity/productfolder?limit=2&offset=0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.moysklad.ru
+      Authorization:
+      - Basic <TOKEN>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Angie
+      Date:
+      - Fri, 14 Nov 2025 08:21:19 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - no-cache
+      X-Lognex-Reset:
+      - '0'
+      X-Lognex-Retry-After:
+      - '0'
+      X-Lognex-Retry-Timeinterval:
+      - '3000'
+      X-Ratelimit-Remaining:
+      - '44'
+      X-Ratelimit-Limit:
+      - '45'
+      Strict-Transport-Security:
+      - max-age=15552000
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "context" : {
+            "employee" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/context/employee",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/metadata",
+                "type" : "employee",
+                "mediaType" : "application/json"
+              }
+            }
+          },
+          "meta" : {
+            "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder?offset=0&limit=2",
+            "type" : "productfolder",
+            "mediaType" : "application/json",
+            "size" : 46,
+            "limit" : 2,
+            "offset" : 0,
+            "nextHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder?offset=2&limit=2"
+          },
+          "rows" : [ {
+            "meta" : {
+              "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/067ddcdc-b4aa-11f0-0a80-1968001f16f1",
+              "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/metadata",
+              "type" : "productfolder",
+              "mediaType" : "application/json",
+              "uuidHref" : "https://online.moysklad.ru/app/#good/edit?id=067ddcdc-b4aa-11f0-0a80-1968001f16f1"
+            },
+            "id" : "067ddcdc-b4aa-11f0-0a80-1968001f16f1",
+            "accountId" : "1e079fd4-f240-11ee-0a80-0681000027c7",
+            "owner" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/1e2c45eb-f240-11ee-0a80-16d90003dc52",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/metadata",
+                "type" : "employee",
+                "mediaType" : "application/json",
+                "uuidHref" : "https://online.moysklad.ru/app/#employee/edit?id=1e2c45eb-f240-11ee-0a80-16d90003dc52"
+              }
+            },
+            "shared" : true,
+            "group" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/group/1e081f6b-f240-11ee-0a80-0681000027c8",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/group/metadata",
+                "type" : "group",
+                "mediaType" : "application/json"
+              }
+            },
+            "updated" : "2025-10-29 12:31:19.482",
+            "name" : "1.2 Дочерняя группа с товаром",
+            "externalCode" : "hhMWkChWggqnchFlNwytW2",
+            "archived" : false,
+            "pathName" : "1 Родительская группа с товаром",
+            "productFolder" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/fa517a62-b4a9-11f0-0a80-160c001ee249",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/metadata",
+                "type" : "productfolder",
+                "mediaType" : "application/json",
+                "uuidHref" : "https://online.moysklad.ru/app/#good/edit?id=fa517a62-b4a9-11f0-0a80-160c001ee249"
+              }
+            },
+            "useParentVat" : true
+          }, {
+            "meta" : {
+              "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/0835bdde-991b-11f0-0a80-161600058999",
+              "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/metadata",
+              "type" : "productfolder",
+              "mediaType" : "application/json",
+              "uuidHref" : "https://online.moysklad.ru/app/#good/edit?id=0835bdde-991b-11f0-0a80-161600058999"
+            },
+            "id" : "0835bdde-991b-11f0-0a80-161600058999",
+            "accountId" : "1e079fd4-f240-11ee-0a80-0681000027c7",
+            "owner" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/1e2c45eb-f240-11ee-0a80-16d90003dc52",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/metadata",
+                "type" : "employee",
+                "mediaType" : "application/json",
+                "uuidHref" : "https://online.moysklad.ru/app/#employee/edit?id=1e2c45eb-f240-11ee-0a80-16d90003dc52"
+              }
+            },
+            "shared" : true,
+            "group" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/group/1e081f6b-f240-11ee-0a80-0681000027c8",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/group/metadata",
+                "type" : "group",
+                "mediaType" : "application/json"
+              }
+            },
+            "updated" : "2025-09-24 10:49:42.939",
+            "name" : "26 Обычная Группа 1 ур ABC",
+            "externalCode" : "yNn9Sc80h4et-uLXwLfvC3",
+            "archived" : false,
+            "pathName" : "",
+            "useParentVat" : true
+          } ]
+        }
+  recorded_at: Fri, 14 Nov 2025 08:21:19 GMT
+- request:
+    method: get
+    uri: https://api.moysklad.ru/api/remap/1.2/entity/productfolder?limit=2&offset=2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.moysklad.ru
+      Authorization:
+      - Basic <TOKEN>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Angie
+      Date:
+      - Fri, 14 Nov 2025 08:21:19 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - no-cache
+      X-Lognex-Reset:
+      - '0'
+      X-Lognex-Retry-After:
+      - '0'
+      X-Lognex-Retry-Timeinterval:
+      - '3000'
+      X-Ratelimit-Remaining:
+      - '44'
+      X-Ratelimit-Limit:
+      - '45'
+      Strict-Transport-Security:
+      - max-age=15552000
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "context" : {
+            "employee" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/context/employee",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/metadata",
+                "type" : "employee",
+                "mediaType" : "application/json"
+              }
+            }
+          },
+          "meta" : {
+            "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder?offset=2&limit=2",
+            "type" : "productfolder",
+            "mediaType" : "application/json",
+            "size" : 46,
+            "limit" : 2,
+            "offset" : 2,
+            "nextHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder?offset=4&limit=2",
+            "previousHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder?offset=0&limit=2"
+          },
+          "rows" : [ {
+            "meta" : {
+              "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/0a93e85b-991b-11f0-0a80-05fe00061f97",
+              "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/metadata",
+              "type" : "productfolder",
+              "mediaType" : "application/json",
+              "uuidHref" : "https://online.moysklad.ru/app/#good/edit?id=0a93e85b-991b-11f0-0a80-05fe00061f97"
+            },
+            "id" : "0a93e85b-991b-11f0-0a80-05fe00061f97",
+            "accountId" : "1e079fd4-f240-11ee-0a80-0681000027c7",
+            "owner" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/1e2c45eb-f240-11ee-0a80-16d90003dc52",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/metadata",
+                "type" : "employee",
+                "mediaType" : "application/json",
+                "uuidHref" : "https://online.moysklad.ru/app/#employee/edit?id=1e2c45eb-f240-11ee-0a80-16d90003dc52"
+              }
+            },
+            "shared" : true,
+            "group" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/group/1e081f6b-f240-11ee-0a80-0681000027c8",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/group/metadata",
+                "type" : "group",
+                "mediaType" : "application/json"
+              }
+            },
+            "updated" : "2025-09-24 13:53:53.258",
+            "name" : "27 Обычная Группа 1 ур ABC ПЕРЕИМЕНОВАНА",
+            "externalCode" : "-9hPCDfmjpTu4apZbsTFZ1",
+            "archived" : false,
+            "pathName" : "",
+            "useParentVat" : true
+          }, {
+            "meta" : {
+              "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/0ff1c6b3-991b-11f0-0a80-02c60005bebd",
+              "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/metadata",
+              "type" : "productfolder",
+              "mediaType" : "application/json",
+              "uuidHref" : "https://online.moysklad.ru/app/#good/edit?id=0ff1c6b3-991b-11f0-0a80-02c60005bebd"
+            },
+            "id" : "0ff1c6b3-991b-11f0-0a80-02c60005bebd",
+            "accountId" : "1e079fd4-f240-11ee-0a80-0681000027c7",
+            "owner" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/1e2c45eb-f240-11ee-0a80-16d90003dc52",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/metadata",
+                "type" : "employee",
+                "mediaType" : "application/json",
+                "uuidHref" : "https://online.moysklad.ru/app/#employee/edit?id=1e2c45eb-f240-11ee-0a80-16d90003dc52"
+              }
+            },
+            "shared" : true,
+            "group" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/group/1e081f6b-f240-11ee-0a80-0681000027c8",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/group/metadata",
+                "type" : "group",
+                "mediaType" : "application/json"
+              }
+            },
+            "updated" : "2025-09-24 10:49:55.916",
+            "name" : "29 Обычная Группа 1 ур ABC",
+            "externalCode" : "MeFUoEpKiv2tjCRCvxnIG1",
+            "archived" : false,
+            "pathName" : "",
+            "useParentVat" : true
+          } ]
+        }
+  recorded_at: Fri, 14 Nov 2025 08:21:19 GMT
+- request:
+    method: get
+    uri: https://api.moysklad.ru/api/remap/1.2/entity/productfolder?limit=2&offset=4
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.moysklad.ru
+      Authorization:
+      - Basic <TOKEN>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Angie
+      Date:
+      - Fri, 14 Nov 2025 08:21:20 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - no-cache
+      X-Lognex-Reset:
+      - '0'
+      X-Lognex-Retry-After:
+      - '0'
+      X-Lognex-Retry-Timeinterval:
+      - '3000'
+      X-Ratelimit-Remaining:
+      - '44'
+      X-Ratelimit-Limit:
+      - '45'
+      Strict-Transport-Security:
+      - max-age=15552000
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "context" : {
+            "employee" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/context/employee",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/metadata",
+                "type" : "employee",
+                "mediaType" : "application/json"
+              }
+            }
+          },
+          "meta" : {
+            "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder?offset=4&limit=2",
+            "type" : "productfolder",
+            "mediaType" : "application/json",
+            "size" : 46,
+            "limit" : 2,
+            "offset" : 4,
+            "nextHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder?offset=6&limit=2",
+            "previousHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder?offset=2&limit=2"
+          },
+          "rows" : [ {
+            "meta" : {
+              "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/154cc24c-991b-11f0-0a80-0ea50005c12b",
+              "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/metadata",
+              "type" : "productfolder",
+              "mediaType" : "application/json",
+              "uuidHref" : "https://online.moysklad.ru/app/#good/edit?id=154cc24c-991b-11f0-0a80-0ea50005c12b"
+            },
+            "id" : "154cc24c-991b-11f0-0a80-0ea50005c12b",
+            "accountId" : "1e079fd4-f240-11ee-0a80-0681000027c7",
+            "owner" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/1e2c45eb-f240-11ee-0a80-16d90003dc52",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/metadata",
+                "type" : "employee",
+                "mediaType" : "application/json",
+                "uuidHref" : "https://online.moysklad.ru/app/#employee/edit?id=1e2c45eb-f240-11ee-0a80-16d90003dc52"
+              }
+            },
+            "shared" : true,
+            "group" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/group/1e081f6b-f240-11ee-0a80-0681000027c8",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/group/metadata",
+                "type" : "group",
+                "mediaType" : "application/json"
+              }
+            },
+            "updated" : "2025-09-24 10:50:14.680",
+            "name" : "30 Обычная Группа 1 ур ABC",
+            "externalCode" : "eoXmxH99iGxL3GmOIpjif1",
+            "archived" : false,
+            "pathName" : "",
+            "useParentVat" : true
+          }, {
+            "meta" : {
+              "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/30564373-991b-11f0-0a80-0cce0005fb8e",
+              "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/metadata",
+              "type" : "productfolder",
+              "mediaType" : "application/json",
+              "uuidHref" : "https://online.moysklad.ru/app/#good/edit?id=30564373-991b-11f0-0a80-0cce0005fb8e"
+            },
+            "id" : "30564373-991b-11f0-0a80-0cce0005fb8e",
+            "accountId" : "1e079fd4-f240-11ee-0a80-0681000027c7",
+            "owner" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/1e2c45eb-f240-11ee-0a80-16d90003dc52",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/metadata",
+                "type" : "employee",
+                "mediaType" : "application/json",
+                "uuidHref" : "https://online.moysklad.ru/app/#employee/edit?id=1e2c45eb-f240-11ee-0a80-16d90003dc52"
+              }
+            },
+            "shared" : true,
+            "group" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/group/1e081f6b-f240-11ee-0a80-0681000027c8",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/group/metadata",
+                "type" : "group",
+                "mediaType" : "application/json"
+              }
+            },
+            "updated" : "2025-09-24 10:51:03.375",
+            "name" : "3 Группа 2 ур Дочки до 5 уровня",
+            "externalCode" : "t29nq9xSiNsQjiLpvgTy-0",
+            "archived" : false,
+            "pathName" : "3 Группа 1 ур Дочки до 5 уровня",
+            "productFolder" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/8aafb886-991a-11f0-0a80-00760005961d",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/metadata",
+                "type" : "productfolder",
+                "mediaType" : "application/json",
+                "uuidHref" : "https://online.moysklad.ru/app/#good/edit?id=8aafb886-991a-11f0-0a80-00760005961d"
+              }
+            },
+            "useParentVat" : true
+          } ]
+        }
+  recorded_at: Fri, 14 Nov 2025 08:21:20 GMT
+- request:
+    method: get
+    uri: https://api.moysklad.ru/api/remap/1.2/entity/productfolder?limit=2&offset=6
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.moysklad.ru
+      Authorization:
+      - Basic <TOKEN>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Angie
+      Date:
+      - Fri, 14 Nov 2025 08:21:20 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - no-cache
+      X-Lognex-Reset:
+      - '0'
+      X-Lognex-Retry-After:
+      - '0'
+      X-Lognex-Retry-Timeinterval:
+      - '3000'
+      X-Ratelimit-Remaining:
+      - '44'
+      X-Ratelimit-Limit:
+      - '45'
+      Strict-Transport-Security:
+      - max-age=15552000
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "context" : {
+            "employee" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/context/employee",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/metadata",
+                "type" : "employee",
+                "mediaType" : "application/json"
+              }
+            }
+          },
+          "meta" : {
+            "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder?offset=6&limit=2",
+            "type" : "productfolder",
+            "mediaType" : "application/json",
+            "size" : 46,
+            "limit" : 2,
+            "offset" : 6,
+            "nextHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder?offset=8&limit=2",
+            "previousHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder?offset=4&limit=2"
+          },
+          "rows" : [ {
+            "meta" : {
+              "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/3863c58c-bad6-11f0-0a80-197d00035ddb",
+              "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/metadata",
+              "type" : "productfolder",
+              "mediaType" : "application/json",
+              "uuidHref" : "https://online.moysklad.ru/app/#good/edit?id=3863c58c-bad6-11f0-0a80-197d00035ddb"
+            },
+            "id" : "3863c58c-bad6-11f0-0a80-197d00035ddb",
+            "accountId" : "1e079fd4-f240-11ee-0a80-0681000027c7",
+            "owner" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/1e2c45eb-f240-11ee-0a80-16d90003dc52",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/metadata",
+                "type" : "employee",
+                "mediaType" : "application/json",
+                "uuidHref" : "https://online.moysklad.ru/app/#employee/edit?id=1e2c45eb-f240-11ee-0a80-16d90003dc52"
+              }
+            },
+            "shared" : true,
+            "group" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/group/1e081f6b-f240-11ee-0a80-0681000027c8",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/group/metadata",
+                "type" : "group",
+                "mediaType" : "application/json"
+              }
+            },
+            "updated" : "2025-11-06 09:04:51.046",
+            "name" : "Новая группа 1 up",
+            "externalCode" : "tM9EoQSTghH982qZCyXW02",
+            "archived" : false,
+            "pathName" : "",
+            "useParentVat" : true
+          }, {
+            "meta" : {
+              "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/3bd45ec9-991b-11f0-0a80-05fe00062710",
+              "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/metadata",
+              "type" : "productfolder",
+              "mediaType" : "application/json",
+              "uuidHref" : "https://online.moysklad.ru/app/#good/edit?id=3bd45ec9-991b-11f0-0a80-05fe00062710"
+            },
+            "id" : "3bd45ec9-991b-11f0-0a80-05fe00062710",
+            "accountId" : "1e079fd4-f240-11ee-0a80-0681000027c7",
+            "owner" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/1e2c45eb-f240-11ee-0a80-16d90003dc52",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/metadata",
+                "type" : "employee",
+                "mediaType" : "application/json",
+                "uuidHref" : "https://online.moysklad.ru/app/#employee/edit?id=1e2c45eb-f240-11ee-0a80-16d90003dc52"
+              }
+            },
+            "shared" : true,
+            "group" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/group/1e081f6b-f240-11ee-0a80-0681000027c8",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/group/metadata",
+                "type" : "group",
+                "mediaType" : "application/json"
+              }
+            },
+            "updated" : "2025-09-24 10:51:09.542",
+            "name" : "3 Группа 3 ур Дочки до 5 уровня",
+            "externalCode" : "Au6GVNktjMWAFTWpeIFe02",
+            "archived" : false,
+            "pathName" : "3 Группа 1 ур Дочки до 5 уровня/3 Группа 2 ур Дочки до 5 уровня",
+            "productFolder" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/30564373-991b-11f0-0a80-0cce0005fb8e",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/metadata",
+                "type" : "productfolder",
+                "mediaType" : "application/json",
+                "uuidHref" : "https://online.moysklad.ru/app/#good/edit?id=30564373-991b-11f0-0a80-0cce0005fb8e"
+              }
+            },
+            "useParentVat" : true
+          } ]
+        }
+  recorded_at: Fri, 14 Nov 2025 08:21:20 GMT
+- request:
+    method: get
+    uri: https://api.moysklad.ru/api/remap/1.2/entity/productfolder?limit=2&offset=8
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.moysklad.ru
+      Authorization:
+      - Basic <TOKEN>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Angie
+      Date:
+      - Fri, 14 Nov 2025 08:21:21 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - no-cache
+      X-Lognex-Reset:
+      - '0'
+      X-Lognex-Retry-After:
+      - '0'
+      X-Lognex-Retry-Timeinterval:
+      - '3000'
+      X-Ratelimit-Remaining:
+      - '44'
+      X-Ratelimit-Limit:
+      - '45'
+      Strict-Transport-Security:
+      - max-age=15552000
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "context" : {
+            "employee" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/context/employee",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/metadata",
+                "type" : "employee",
+                "mediaType" : "application/json"
+              }
+            }
+          },
+          "meta" : {
+            "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder?offset=8&limit=2",
+            "type" : "productfolder",
+            "mediaType" : "application/json",
+            "size" : 46,
+            "limit" : 2,
+            "offset" : 8,
+            "nextHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder?offset=10&limit=2",
+            "previousHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder?offset=6&limit=2"
+          },
+          "rows" : [ {
+            "meta" : {
+              "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/3db357c4-bad6-11f0-0a80-05d60003b6af",
+              "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/metadata",
+              "type" : "productfolder",
+              "mediaType" : "application/json",
+              "uuidHref" : "https://online.moysklad.ru/app/#good/edit?id=3db357c4-bad6-11f0-0a80-05d60003b6af"
+            },
+            "id" : "3db357c4-bad6-11f0-0a80-05d60003b6af",
+            "accountId" : "1e079fd4-f240-11ee-0a80-0681000027c7",
+            "owner" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/1e2c45eb-f240-11ee-0a80-16d90003dc52",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/metadata",
+                "type" : "employee",
+                "mediaType" : "application/json",
+                "uuidHref" : "https://online.moysklad.ru/app/#employee/edit?id=1e2c45eb-f240-11ee-0a80-16d90003dc52"
+              }
+            },
+            "shared" : true,
+            "group" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/group/1e081f6b-f240-11ee-0a80-0681000027c8",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/group/metadata",
+                "type" : "group",
+                "mediaType" : "application/json"
+              }
+            },
+            "updated" : "2025-11-06 09:04:58.461",
+            "name" : "Новая группа 1.2 up",
+            "externalCode" : "ijluVgOPja9J7Lf5Pu4sc1",
+            "archived" : false,
+            "pathName" : "Новая группа 1 up",
+            "productFolder" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/3863c58c-bad6-11f0-0a80-197d00035ddb",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/metadata",
+                "type" : "productfolder",
+                "mediaType" : "application/json",
+                "uuidHref" : "https://online.moysklad.ru/app/#good/edit?id=3863c58c-bad6-11f0-0a80-197d00035ddb"
+              }
+            },
+            "useParentVat" : true
+          }, {
+            "meta" : {
+              "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/3f8b507a-991b-11f0-0a80-085200061018",
+              "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/metadata",
+              "type" : "productfolder",
+              "mediaType" : "application/json",
+              "uuidHref" : "https://online.moysklad.ru/app/#good/edit?id=3f8b507a-991b-11f0-0a80-085200061018"
+            },
+            "id" : "3f8b507a-991b-11f0-0a80-085200061018",
+            "accountId" : "1e079fd4-f240-11ee-0a80-0681000027c7",
+            "owner" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/1e2c45eb-f240-11ee-0a80-16d90003dc52",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/metadata",
+                "type" : "employee",
+                "mediaType" : "application/json",
+                "uuidHref" : "https://online.moysklad.ru/app/#employee/edit?id=1e2c45eb-f240-11ee-0a80-16d90003dc52"
+              }
+            },
+            "shared" : true,
+            "group" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/group/1e081f6b-f240-11ee-0a80-0681000027c8",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/group/metadata",
+                "type" : "group",
+                "mediaType" : "application/json"
+              }
+            },
+            "updated" : "2025-09-24 10:51:15.773",
+            "name" : "3 Группа 4 ур Дочки до 5 уровня",
+            "externalCode" : "yQFicu1GhJgUEAxB9Exeq0",
+            "archived" : false,
+            "pathName" : "3 Группа 1 ур Дочки до 5 уровня/3 Группа 2 ур Дочки до 5 уровня/3 Группа 3 ур Дочки до 5 уровня",
+            "productFolder" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/3bd45ec9-991b-11f0-0a80-05fe00062710",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/metadata",
+                "type" : "productfolder",
+                "mediaType" : "application/json",
+                "uuidHref" : "https://online.moysklad.ru/app/#good/edit?id=3bd45ec9-991b-11f0-0a80-05fe00062710"
+              }
+            },
+            "useParentVat" : true
+          } ]
+        }
+  recorded_at: Fri, 14 Nov 2025 08:21:21 GMT
+- request:
+    method: get
+    uri: https://api.moysklad.ru/api/remap/1.2/entity/productfolder?limit=2&offset=10
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.moysklad.ru
+      Authorization:
+      - Basic <TOKEN>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Angie
+      Date:
+      - Fri, 14 Nov 2025 08:21:21 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - no-cache
+      X-Lognex-Reset:
+      - '0'
+      X-Lognex-Retry-After:
+      - '0'
+      X-Lognex-Retry-Timeinterval:
+      - '3000'
+      X-Ratelimit-Remaining:
+      - '44'
+      X-Ratelimit-Limit:
+      - '45'
+      Strict-Transport-Security:
+      - max-age=15552000
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "context" : {
+            "employee" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/context/employee",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/metadata",
+                "type" : "employee",
+                "mediaType" : "application/json"
+              }
+            }
+          },
+          "meta" : {
+            "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder?offset=10&limit=2",
+            "type" : "productfolder",
+            "mediaType" : "application/json",
+            "size" : 46,
+            "limit" : 2,
+            "offset" : 10,
+            "nextHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder?offset=12&limit=2",
+            "previousHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder?offset=8&limit=2"
+          },
+          "rows" : [ {
+            "meta" : {
+              "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/44337a97-991b-11f0-0a80-0ea50005c9bc",
+              "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/metadata",
+              "type" : "productfolder",
+              "mediaType" : "application/json",
+              "uuidHref" : "https://online.moysklad.ru/app/#good/edit?id=44337a97-991b-11f0-0a80-0ea50005c9bc"
+            },
+            "id" : "44337a97-991b-11f0-0a80-0ea50005c9bc",
+            "accountId" : "1e079fd4-f240-11ee-0a80-0681000027c7",
+            "owner" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/1e2c45eb-f240-11ee-0a80-16d90003dc52",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/metadata",
+                "type" : "employee",
+                "mediaType" : "application/json",
+                "uuidHref" : "https://online.moysklad.ru/app/#employee/edit?id=1e2c45eb-f240-11ee-0a80-16d90003dc52"
+              }
+            },
+            "shared" : true,
+            "group" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/group/1e081f6b-f240-11ee-0a80-0681000027c8",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/group/metadata",
+                "type" : "group",
+                "mediaType" : "application/json"
+              }
+            },
+            "updated" : "2025-09-24 10:51:23.587",
+            "name" : "3 Группа 5 ур Дочки до 5 уровня",
+            "externalCode" : "e483-2I0juEuH0hhyLZua0",
+            "archived" : false,
+            "pathName" : "3 Группа 1 ур Дочки до 5 уровня/3 Группа 2 ур Дочки до 5 уровня/3 Группа 3 ур Дочки до 5 уровня/3 Группа 4 ур Дочки до 5 уровня",
+            "productFolder" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/3f8b507a-991b-11f0-0a80-085200061018",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/metadata",
+                "type" : "productfolder",
+                "mediaType" : "application/json",
+                "uuidHref" : "https://online.moysklad.ru/app/#good/edit?id=3f8b507a-991b-11f0-0a80-085200061018"
+              }
+            },
+            "useParentVat" : true
+          }, {
+            "meta" : {
+              "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/7843f27c-991a-11f0-0a80-143c0006458b",
+              "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/metadata",
+              "type" : "productfolder",
+              "mediaType" : "application/json",
+              "uuidHref" : "https://online.moysklad.ru/app/#good/edit?id=7843f27c-991a-11f0-0a80-143c0006458b"
+            },
+            "id" : "7843f27c-991a-11f0-0a80-143c0006458b",
+            "accountId" : "1e079fd4-f240-11ee-0a80-0681000027c7",
+            "owner" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/1e2c45eb-f240-11ee-0a80-16d90003dc52",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/metadata",
+                "type" : "employee",
+                "mediaType" : "application/json",
+                "uuidHref" : "https://online.moysklad.ru/app/#employee/edit?id=1e2c45eb-f240-11ee-0a80-16d90003dc52"
+              }
+            },
+            "shared" : true,
+            "group" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/group/1e081f6b-f240-11ee-0a80-0681000027c8",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/group/metadata",
+                "type" : "group",
+                "mediaType" : "application/json"
+              }
+            },
+            "updated" : "2025-09-24 10:53:14.903",
+            "name" : "2 Группа 1 ур Нет товаров",
+            "externalCode" : "owFlhoy7g3dmLLPcuqLqq1",
+            "archived" : false,
+            "pathName" : "",
+            "useParentVat" : true
+          } ]
+        }
+  recorded_at: Fri, 14 Nov 2025 08:21:21 GMT
+- request:
+    method: get
+    uri: https://api.moysklad.ru/api/remap/1.2/entity/productfolder?limit=2&offset=12
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.moysklad.ru
+      Authorization:
+      - Basic <TOKEN>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Angie
+      Date:
+      - Fri, 14 Nov 2025 08:21:21 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - no-cache
+      X-Lognex-Reset:
+      - '0'
+      X-Lognex-Retry-After:
+      - '0'
+      X-Lognex-Retry-Timeinterval:
+      - '3000'
+      X-Ratelimit-Remaining:
+      - '44'
+      X-Ratelimit-Limit:
+      - '45'
+      Strict-Transport-Security:
+      - max-age=15552000
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "context" : {
+            "employee" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/context/employee",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/metadata",
+                "type" : "employee",
+                "mediaType" : "application/json"
+              }
+            }
+          },
+          "meta" : {
+            "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder?offset=12&limit=2",
+            "type" : "productfolder",
+            "mediaType" : "application/json",
+            "size" : 46,
+            "limit" : 2,
+            "offset" : 12,
+            "nextHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder?offset=14&limit=2",
+            "previousHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder?offset=10&limit=2"
+          },
+          "rows" : [ {
+            "meta" : {
+              "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/7d425e24-991a-11f0-0a80-02c60005a36b",
+              "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/metadata",
+              "type" : "productfolder",
+              "mediaType" : "application/json",
+              "uuidHref" : "https://online.moysklad.ru/app/#good/edit?id=7d425e24-991a-11f0-0a80-02c60005a36b"
+            },
+            "id" : "7d425e24-991a-11f0-0a80-02c60005a36b",
+            "accountId" : "1e079fd4-f240-11ee-0a80-0681000027c7",
+            "owner" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/1e2c45eb-f240-11ee-0a80-16d90003dc52",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/metadata",
+                "type" : "employee",
+                "mediaType" : "application/json",
+                "uuidHref" : "https://online.moysklad.ru/app/#employee/edit?id=1e2c45eb-f240-11ee-0a80-16d90003dc52"
+              }
+            },
+            "shared" : true,
+            "group" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/group/1e081f6b-f240-11ee-0a80-0681000027c8",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/group/metadata",
+                "type" : "group",
+                "mediaType" : "application/json"
+              }
+            },
+            "updated" : "2025-09-24 10:53:22.486",
+            "name" : "2 Группа 2 ур Есть товары",
+            "externalCode" : "HrrRKIyigRXDaVHC6Uho73",
+            "archived" : false,
+            "pathName" : "2 Группа 1 ур Нет товаров",
+            "productFolder" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/7843f27c-991a-11f0-0a80-143c0006458b",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/metadata",
+                "type" : "productfolder",
+                "mediaType" : "application/json",
+                "uuidHref" : "https://online.moysklad.ru/app/#good/edit?id=7843f27c-991a-11f0-0a80-143c0006458b"
+              }
+            },
+            "useParentVat" : true
+          }, {
+            "meta" : {
+              "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/7fa8ff4a-991a-11f0-0a80-08520005dc4e",
+              "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/metadata",
+              "type" : "productfolder",
+              "mediaType" : "application/json",
+              "uuidHref" : "https://online.moysklad.ru/app/#good/edit?id=7fa8ff4a-991a-11f0-0a80-08520005dc4e"
+            },
+            "id" : "7fa8ff4a-991a-11f0-0a80-08520005dc4e",
+            "accountId" : "1e079fd4-f240-11ee-0a80-0681000027c7",
+            "owner" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/1e2c45eb-f240-11ee-0a80-16d90003dc52",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/metadata",
+                "type" : "employee",
+                "mediaType" : "application/json",
+                "uuidHref" : "https://online.moysklad.ru/app/#employee/edit?id=1e2c45eb-f240-11ee-0a80-16d90003dc52"
+              }
+            },
+            "shared" : true,
+            "group" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/group/1e081f6b-f240-11ee-0a80-0681000027c8",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/group/metadata",
+                "type" : "group",
+                "mediaType" : "application/json"
+              }
+            },
+            "updated" : "2025-09-24 10:53:08.243",
+            "name" : "2 Группа 3 ур Нет товаров",
+            "externalCode" : "OQJ15zfhgNPWD7hs-ngFO1",
+            "archived" : false,
+            "pathName" : "2 Группа 1 ур Нет товаров/2 Группа 2 ур Есть товары",
+            "productFolder" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/7d425e24-991a-11f0-0a80-02c60005a36b",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/metadata",
+                "type" : "productfolder",
+                "mediaType" : "application/json",
+                "uuidHref" : "https://online.moysklad.ru/app/#good/edit?id=7d425e24-991a-11f0-0a80-02c60005a36b"
+              }
+            },
+            "useParentVat" : true
+          } ]
+        }
+  recorded_at: Fri, 14 Nov 2025 08:21:21 GMT
+- request:
+    method: get
+    uri: https://api.moysklad.ru/api/remap/1.2/entity/productfolder?limit=2&offset=14
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.moysklad.ru
+      Authorization:
+      - Basic <TOKEN>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Angie
+      Date:
+      - Fri, 14 Nov 2025 08:21:22 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - no-cache
+      X-Lognex-Reset:
+      - '0'
+      X-Lognex-Retry-After:
+      - '0'
+      X-Lognex-Retry-Timeinterval:
+      - '3000'
+      X-Ratelimit-Remaining:
+      - '44'
+      X-Ratelimit-Limit:
+      - '45'
+      Strict-Transport-Security:
+      - max-age=15552000
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "context" : {
+            "employee" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/context/employee",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/metadata",
+                "type" : "employee",
+                "mediaType" : "application/json"
+              }
+            }
+          },
+          "meta" : {
+            "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder?offset=14&limit=2",
+            "type" : "productfolder",
+            "mediaType" : "application/json",
+            "size" : 46,
+            "limit" : 2,
+            "offset" : 14,
+            "nextHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder?offset=16&limit=2",
+            "previousHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder?offset=12&limit=2"
+          },
+          "rows" : [ {
+            "meta" : {
+              "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/8522d443-991a-11f0-0a80-143c0006479f",
+              "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/metadata",
+              "type" : "productfolder",
+              "mediaType" : "application/json",
+              "uuidHref" : "https://online.moysklad.ru/app/#good/edit?id=8522d443-991a-11f0-0a80-143c0006479f"
+            },
+            "id" : "8522d443-991a-11f0-0a80-143c0006479f",
+            "accountId" : "1e079fd4-f240-11ee-0a80-0681000027c7",
+            "owner" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/1e2c45eb-f240-11ee-0a80-16d90003dc52",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/metadata",
+                "type" : "employee",
+                "mediaType" : "application/json",
+                "uuidHref" : "https://online.moysklad.ru/app/#employee/edit?id=1e2c45eb-f240-11ee-0a80-16d90003dc52"
+              }
+            },
+            "shared" : true,
+            "group" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/group/1e081f6b-f240-11ee-0a80-0681000027c8",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/group/metadata",
+                "type" : "group",
+                "mediaType" : "application/json"
+              }
+            },
+            "updated" : "2025-09-24 10:53:29.710",
+            "name" : "2 Группа 4 ур Есть товары",
+            "externalCode" : "8pz1juT8gHC6RjTfCBFOZ1",
+            "archived" : false,
+            "pathName" : "2 Группа 1 ур Нет товаров/2 Группа 2 ур Есть товары/2 Группа 3 ур Нет товаров",
+            "productFolder" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/7fa8ff4a-991a-11f0-0a80-08520005dc4e",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/metadata",
+                "type" : "productfolder",
+                "mediaType" : "application/json",
+                "uuidHref" : "https://online.moysklad.ru/app/#good/edit?id=7fa8ff4a-991a-11f0-0a80-08520005dc4e"
+              }
+            },
+            "useParentVat" : true
+          }, {
+            "meta" : {
+              "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/8aafb886-991a-11f0-0a80-00760005961d",
+              "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/metadata",
+              "type" : "productfolder",
+              "mediaType" : "application/json",
+              "uuidHref" : "https://online.moysklad.ru/app/#good/edit?id=8aafb886-991a-11f0-0a80-00760005961d"
+            },
+            "id" : "8aafb886-991a-11f0-0a80-00760005961d",
+            "accountId" : "1e079fd4-f240-11ee-0a80-0681000027c7",
+            "owner" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/1e2c45eb-f240-11ee-0a80-16d90003dc52",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/metadata",
+                "type" : "employee",
+                "mediaType" : "application/json",
+                "uuidHref" : "https://online.moysklad.ru/app/#employee/edit?id=1e2c45eb-f240-11ee-0a80-16d90003dc52"
+              }
+            },
+            "shared" : true,
+            "group" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/group/1e081f6b-f240-11ee-0a80-0681000027c8",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/group/metadata",
+                "type" : "group",
+                "mediaType" : "application/json"
+              }
+            },
+            "updated" : "2025-09-24 10:50:35.482",
+            "name" : "3 Группа 1 ур Дочки до 5 уровня",
+            "externalCode" : "talJ41bLjh8zu45ULbcyM3",
+            "archived" : false,
+            "pathName" : "",
+            "useParentVat" : true
+          } ]
+        }
+  recorded_at: Fri, 14 Nov 2025 08:21:22 GMT
+- request:
+    method: get
+    uri: https://api.moysklad.ru/api/remap/1.2/entity/productfolder?limit=2&offset=16
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.moysklad.ru
+      Authorization:
+      - Basic <TOKEN>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Angie
+      Date:
+      - Fri, 14 Nov 2025 08:21:22 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - no-cache
+      X-Lognex-Reset:
+      - '0'
+      X-Lognex-Retry-After:
+      - '0'
+      X-Lognex-Retry-Timeinterval:
+      - '3000'
+      X-Ratelimit-Remaining:
+      - '44'
+      X-Ratelimit-Limit:
+      - '45'
+      Strict-Transport-Security:
+      - max-age=15552000
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "context" : {
+            "employee" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/context/employee",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/metadata",
+                "type" : "employee",
+                "mediaType" : "application/json"
+              }
+            }
+          },
+          "meta" : {
+            "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder?offset=16&limit=2",
+            "type" : "productfolder",
+            "mediaType" : "application/json",
+            "size" : 46,
+            "limit" : 2,
+            "offset" : 16,
+            "nextHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder?offset=18&limit=2",
+            "previousHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder?offset=14&limit=2"
+          },
+          "rows" : [ {
+            "meta" : {
+              "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/95b14121-991a-11f0-0a80-07320005b584",
+              "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/metadata",
+              "type" : "productfolder",
+              "mediaType" : "application/json",
+              "uuidHref" : "https://online.moysklad.ru/app/#good/edit?id=95b14121-991a-11f0-0a80-07320005b584"
+            },
+            "id" : "95b14121-991a-11f0-0a80-07320005b584",
+            "accountId" : "1e079fd4-f240-11ee-0a80-0681000027c7",
+            "owner" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/1e2c45eb-f240-11ee-0a80-16d90003dc52",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/metadata",
+                "type" : "employee",
+                "mediaType" : "application/json",
+                "uuidHref" : "https://online.moysklad.ru/app/#employee/edit?id=1e2c45eb-f240-11ee-0a80-16d90003dc52"
+              }
+            },
+            "shared" : true,
+            "group" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/group/1e081f6b-f240-11ee-0a80-0681000027c8",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/group/metadata",
+                "type" : "group",
+                "mediaType" : "application/json"
+              }
+            },
+            "updated" : "2025-09-24 10:46:30.811",
+            "name" : "4 Группа 1 ур",
+            "externalCode" : "Q2v80mi4j4uq8WJGSvoyy0",
+            "archived" : false,
+            "pathName" : "",
+            "useParentVat" : true
+          }, {
+            "meta" : {
+              "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/9aad2d7e-991a-11f0-0a80-007600059d3a",
+              "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/metadata",
+              "type" : "productfolder",
+              "mediaType" : "application/json",
+              "uuidHref" : "https://online.moysklad.ru/app/#good/edit?id=9aad2d7e-991a-11f0-0a80-007600059d3a"
+            },
+            "id" : "9aad2d7e-991a-11f0-0a80-007600059d3a",
+            "accountId" : "1e079fd4-f240-11ee-0a80-0681000027c7",
+            "owner" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/1e2c45eb-f240-11ee-0a80-16d90003dc52",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/metadata",
+                "type" : "employee",
+                "mediaType" : "application/json",
+                "uuidHref" : "https://online.moysklad.ru/app/#employee/edit?id=1e2c45eb-f240-11ee-0a80-16d90003dc52"
+              }
+            },
+            "shared" : true,
+            "group" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/group/1e081f6b-f240-11ee-0a80-0681000027c8",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/group/metadata",
+                "type" : "group",
+                "mediaType" : "application/json"
+              }
+            },
+            "updated" : "2025-09-24 10:46:39.173",
+            "name" : "5 Группа 1 ур",
+            "externalCode" : "lfGNVZLlgcqShvKT0XRMx1",
+            "archived" : false,
+            "pathName" : "",
+            "useParentVat" : true
+          } ]
+        }
+  recorded_at: Fri, 14 Nov 2025 08:21:22 GMT
+- request:
+    method: get
+    uri: https://api.moysklad.ru/api/remap/1.2/entity/productfolder?limit=2&offset=18
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.moysklad.ru
+      Authorization:
+      - Basic <TOKEN>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Angie
+      Date:
+      - Fri, 14 Nov 2025 08:21:22 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - no-cache
+      X-Lognex-Reset:
+      - '0'
+      X-Lognex-Retry-After:
+      - '0'
+      X-Lognex-Retry-Timeinterval:
+      - '3000'
+      X-Ratelimit-Remaining:
+      - '44'
+      X-Ratelimit-Limit:
+      - '45'
+      Strict-Transport-Security:
+      - max-age=15552000
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "context" : {
+            "employee" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/context/employee",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/metadata",
+                "type" : "employee",
+                "mediaType" : "application/json"
+              }
+            }
+          },
+          "meta" : {
+            "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder?offset=18&limit=2",
+            "type" : "productfolder",
+            "mediaType" : "application/json",
+            "size" : 46,
+            "limit" : 2,
+            "offset" : 18,
+            "nextHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder?offset=20&limit=2",
+            "previousHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder?offset=16&limit=2"
+          },
+          "rows" : [ {
+            "meta" : {
+              "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/9f388fee-991a-11f0-0a80-161600057037",
+              "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/metadata",
+              "type" : "productfolder",
+              "mediaType" : "application/json",
+              "uuidHref" : "https://online.moysklad.ru/app/#good/edit?id=9f388fee-991a-11f0-0a80-161600057037"
+            },
+            "id" : "9f388fee-991a-11f0-0a80-161600057037",
+            "accountId" : "1e079fd4-f240-11ee-0a80-0681000027c7",
+            "owner" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/1e2c45eb-f240-11ee-0a80-16d90003dc52",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/metadata",
+                "type" : "employee",
+                "mediaType" : "application/json",
+                "uuidHref" : "https://online.moysklad.ru/app/#employee/edit?id=1e2c45eb-f240-11ee-0a80-16d90003dc52"
+              }
+            },
+            "shared" : true,
+            "group" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/group/1e081f6b-f240-11ee-0a80-0681000027c8",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/group/metadata",
+                "type" : "group",
+                "mediaType" : "application/json"
+              }
+            },
+            "updated" : "2025-09-24 10:46:46.796",
+            "name" : "6 Группа 1 ур",
+            "externalCode" : "1VCj0n-DhzB5gNtOWWNeu2",
+            "archived" : false,
+            "pathName" : "",
+            "useParentVat" : true
+          }, {
+            "meta" : {
+              "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/a42445e3-991a-11f0-0a80-08520005ea74",
+              "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/metadata",
+              "type" : "productfolder",
+              "mediaType" : "application/json",
+              "uuidHref" : "https://online.moysklad.ru/app/#good/edit?id=a42445e3-991a-11f0-0a80-08520005ea74"
+            },
+            "id" : "a42445e3-991a-11f0-0a80-08520005ea74",
+            "accountId" : "1e079fd4-f240-11ee-0a80-0681000027c7",
+            "owner" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/1e2c45eb-f240-11ee-0a80-16d90003dc52",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/metadata",
+                "type" : "employee",
+                "mediaType" : "application/json",
+                "uuidHref" : "https://online.moysklad.ru/app/#employee/edit?id=1e2c45eb-f240-11ee-0a80-16d90003dc52"
+              }
+            },
+            "shared" : true,
+            "group" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/group/1e081f6b-f240-11ee-0a80-0681000027c8",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/group/metadata",
+                "type" : "group",
+                "mediaType" : "application/json"
+              }
+            },
+            "updated" : "2025-09-24 10:46:55.053",
+            "name" : "7 Группа 1 ур",
+            "externalCode" : "SrwY8yNUiChhGRHBISWPI2",
+            "archived" : false,
+            "pathName" : "",
+            "useParentVat" : true
+          } ]
+        }
+  recorded_at: Fri, 14 Nov 2025 08:21:22 GMT
+- request:
+    method: get
+    uri: https://api.moysklad.ru/api/remap/1.2/entity/productfolder?limit=2&offset=20
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.moysklad.ru
+      Authorization:
+      - Basic <TOKEN>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Angie
+      Date:
+      - Fri, 14 Nov 2025 08:21:23 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - no-cache
+      X-Lognex-Reset:
+      - '0'
+      X-Lognex-Retry-After:
+      - '0'
+      X-Lognex-Retry-Timeinterval:
+      - '3000'
+      X-Ratelimit-Remaining:
+      - '44'
+      X-Ratelimit-Limit:
+      - '45'
+      Strict-Transport-Security:
+      - max-age=15552000
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "context" : {
+            "employee" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/context/employee",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/metadata",
+                "type" : "employee",
+                "mediaType" : "application/json"
+              }
+            }
+          },
+          "meta" : {
+            "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder?offset=20&limit=2",
+            "type" : "productfolder",
+            "mediaType" : "application/json",
+            "size" : 46,
+            "limit" : 2,
+            "offset" : 20,
+            "nextHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder?offset=22&limit=2",
+            "previousHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder?offset=18&limit=2"
+          },
+          "rows" : [ {
+            "meta" : {
+              "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/a71f3658-991a-11f0-0a80-15fe00059dc8",
+              "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/metadata",
+              "type" : "productfolder",
+              "mediaType" : "application/json",
+              "uuidHref" : "https://online.moysklad.ru/app/#good/edit?id=a71f3658-991a-11f0-0a80-15fe00059dc8"
+            },
+            "id" : "a71f3658-991a-11f0-0a80-15fe00059dc8",
+            "accountId" : "1e079fd4-f240-11ee-0a80-0681000027c7",
+            "owner" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/1e2c45eb-f240-11ee-0a80-16d90003dc52",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/metadata",
+                "type" : "employee",
+                "mediaType" : "application/json",
+                "uuidHref" : "https://online.moysklad.ru/app/#employee/edit?id=1e2c45eb-f240-11ee-0a80-16d90003dc52"
+              }
+            },
+            "shared" : true,
+            "group" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/group/1e081f6b-f240-11ee-0a80-0681000027c8",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/group/metadata",
+                "type" : "group",
+                "mediaType" : "application/json"
+              }
+            },
+            "updated" : "2025-09-24 10:47:00.052",
+            "name" : "8 Группа 1 ур",
+            "externalCode" : "rUwhi91Bh8mAAaFPlN8900",
+            "archived" : false,
+            "pathName" : "",
+            "useParentVat" : true
+          }, {
+            "meta" : {
+              "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/abb00e16-991a-11f0-0a80-0f0e0005c5e6",
+              "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/metadata",
+              "type" : "productfolder",
+              "mediaType" : "application/json",
+              "uuidHref" : "https://online.moysklad.ru/app/#good/edit?id=abb00e16-991a-11f0-0a80-0f0e0005c5e6"
+            },
+            "id" : "abb00e16-991a-11f0-0a80-0f0e0005c5e6",
+            "accountId" : "1e079fd4-f240-11ee-0a80-0681000027c7",
+            "owner" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/1e2c45eb-f240-11ee-0a80-16d90003dc52",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/metadata",
+                "type" : "employee",
+                "mediaType" : "application/json",
+                "uuidHref" : "https://online.moysklad.ru/app/#employee/edit?id=1e2c45eb-f240-11ee-0a80-16d90003dc52"
+              }
+            },
+            "shared" : true,
+            "group" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/group/1e081f6b-f240-11ee-0a80-0681000027c8",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/group/metadata",
+                "type" : "group",
+                "mediaType" : "application/json"
+              }
+            },
+            "updated" : "2025-09-24 10:47:07.713",
+            "name" : "9 Группа 1 ур",
+            "externalCode" : "0ovGWxgtiOYfwUZ8NeXTV1",
+            "archived" : false,
+            "pathName" : "",
+            "useParentVat" : true
+          } ]
+        }
+  recorded_at: Fri, 14 Nov 2025 08:21:23 GMT
+- request:
+    method: get
+    uri: https://api.moysklad.ru/api/remap/1.2/entity/productfolder?limit=2&offset=22
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.moysklad.ru
+      Authorization:
+      - Basic <TOKEN>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Angie
+      Date:
+      - Fri, 14 Nov 2025 08:21:23 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - no-cache
+      X-Lognex-Reset:
+      - '0'
+      X-Lognex-Retry-After:
+      - '0'
+      X-Lognex-Retry-Timeinterval:
+      - '3000'
+      X-Ratelimit-Remaining:
+      - '44'
+      X-Ratelimit-Limit:
+      - '45'
+      Strict-Transport-Security:
+      - max-age=15552000
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "context" : {
+            "employee" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/context/employee",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/metadata",
+                "type" : "employee",
+                "mediaType" : "application/json"
+              }
+            }
+          },
+          "meta" : {
+            "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder?offset=22&limit=2",
+            "type" : "productfolder",
+            "mediaType" : "application/json",
+            "size" : 46,
+            "limit" : 2,
+            "offset" : 22,
+            "nextHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder?offset=24&limit=2",
+            "previousHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder?offset=20&limit=2"
+          },
+          "rows" : [ {
+            "meta" : {
+              "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/aed8f741-991a-11f0-0a80-097600059f0b",
+              "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/metadata",
+              "type" : "productfolder",
+              "mediaType" : "application/json",
+              "uuidHref" : "https://online.moysklad.ru/app/#good/edit?id=aed8f741-991a-11f0-0a80-097600059f0b"
+            },
+            "id" : "aed8f741-991a-11f0-0a80-097600059f0b",
+            "accountId" : "1e079fd4-f240-11ee-0a80-0681000027c7",
+            "owner" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/1e2c45eb-f240-11ee-0a80-16d90003dc52",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/metadata",
+                "type" : "employee",
+                "mediaType" : "application/json",
+                "uuidHref" : "https://online.moysklad.ru/app/#employee/edit?id=1e2c45eb-f240-11ee-0a80-16d90003dc52"
+              }
+            },
+            "shared" : true,
+            "group" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/group/1e081f6b-f240-11ee-0a80-0681000027c8",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/group/metadata",
+                "type" : "group",
+                "mediaType" : "application/json"
+              }
+            },
+            "updated" : "2025-09-24 10:47:13.014",
+            "name" : "10 Группа 1 ур",
+            "externalCode" : "LBBV0h-vhcKL02Jbl8GqU3",
+            "archived" : false,
+            "pathName" : "",
+            "useParentVat" : true
+          }, {
+            "meta" : {
+              "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/c44cd24c-991a-11f0-0a80-0ea50005ae09",
+              "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/metadata",
+              "type" : "productfolder",
+              "mediaType" : "application/json",
+              "uuidHref" : "https://online.moysklad.ru/app/#good/edit?id=c44cd24c-991a-11f0-0a80-0ea50005ae09"
+            },
+            "id" : "c44cd24c-991a-11f0-0a80-0ea50005ae09",
+            "accountId" : "1e079fd4-f240-11ee-0a80-0681000027c7",
+            "owner" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/1e2c45eb-f240-11ee-0a80-16d90003dc52",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/metadata",
+                "type" : "employee",
+                "mediaType" : "application/json",
+                "uuidHref" : "https://online.moysklad.ru/app/#employee/edit?id=1e2c45eb-f240-11ee-0a80-16d90003dc52"
+              }
+            },
+            "shared" : true,
+            "group" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/group/1e081f6b-f240-11ee-0a80-0681000027c8",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/group/metadata",
+                "type" : "group",
+                "mediaType" : "application/json"
+              }
+            },
+            "updated" : "2025-09-24 10:47:49.005",
+            "name" : "11 Группа 1 ур с очень очень очень очень очень очень очень очень очень очень очень длинным название группы",
+            "externalCode" : "o0ILlVaHhn2mtzbtDyAJ52",
+            "archived" : false,
+            "pathName" : "",
+            "useParentVat" : true
+          } ]
+        }
+  recorded_at: Fri, 14 Nov 2025 08:21:23 GMT
+- request:
+    method: get
+    uri: https://api.moysklad.ru/api/remap/1.2/entity/productfolder?limit=2&offset=24
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.moysklad.ru
+      Authorization:
+      - Basic <TOKEN>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Angie
+      Date:
+      - Fri, 14 Nov 2025 08:21:24 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - no-cache
+      X-Lognex-Reset:
+      - '0'
+      X-Lognex-Retry-After:
+      - '0'
+      X-Lognex-Retry-Timeinterval:
+      - '3000'
+      X-Ratelimit-Remaining:
+      - '44'
+      X-Ratelimit-Limit:
+      - '45'
+      Strict-Transport-Security:
+      - max-age=15552000
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "context" : {
+            "employee" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/context/employee",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/metadata",
+                "type" : "employee",
+                "mediaType" : "application/json"
+              }
+            }
+          },
+          "meta" : {
+            "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder?offset=24&limit=2",
+            "type" : "productfolder",
+            "mediaType" : "application/json",
+            "size" : 46,
+            "limit" : 2,
+            "offset" : 24,
+            "nextHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder?offset=26&limit=2",
+            "previousHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder?offset=22&limit=2"
+          },
+          "rows" : [ {
+            "meta" : {
+              "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/c473dc87-991b-11f0-0a80-15fe0005d37c",
+              "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/metadata",
+              "type" : "productfolder",
+              "mediaType" : "application/json",
+              "uuidHref" : "https://online.moysklad.ru/app/#good/edit?id=c473dc87-991b-11f0-0a80-15fe0005d37c"
+            },
+            "id" : "c473dc87-991b-11f0-0a80-15fe0005d37c",
+            "accountId" : "1e079fd4-f240-11ee-0a80-0681000027c7",
+            "owner" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/1e2c45eb-f240-11ee-0a80-16d90003dc52",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/metadata",
+                "type" : "employee",
+                "mediaType" : "application/json",
+                "uuidHref" : "https://online.moysklad.ru/app/#employee/edit?id=1e2c45eb-f240-11ee-0a80-16d90003dc52"
+              }
+            },
+            "shared" : true,
+            "group" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/group/1e081f6b-f240-11ee-0a80-0681000027c8",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/group/metadata",
+                "type" : "group",
+                "mediaType" : "application/json"
+              }
+            },
+            "updated" : "2025-09-24 10:54:58.733",
+            "name" : "11 Группа 2 ур с очень очень очень очень очень очень очень очень очень очень очень длинным название группы",
+            "externalCode" : "qiU5BasFgW17yznPIUX741",
+            "archived" : false,
+            "pathName" : "11 Группа 1 ур с очень очень очень очень очень очень очень очень очень очень очень длинным название группы",
+            "productFolder" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/c44cd24c-991a-11f0-0a80-0ea50005ae09",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/metadata",
+                "type" : "productfolder",
+                "mediaType" : "application/json",
+                "uuidHref" : "https://online.moysklad.ru/app/#good/edit?id=c44cd24c-991a-11f0-0a80-0ea50005ae09"
+              }
+            },
+            "useParentVat" : true
+          }, {
+            "meta" : {
+              "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/c8218656-991a-11f0-0a80-0f0e0005cb4f",
+              "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/metadata",
+              "type" : "productfolder",
+              "mediaType" : "application/json",
+              "uuidHref" : "https://online.moysklad.ru/app/#good/edit?id=c8218656-991a-11f0-0a80-0f0e0005cb4f"
+            },
+            "id" : "c8218656-991a-11f0-0a80-0f0e0005cb4f",
+            "accountId" : "1e079fd4-f240-11ee-0a80-0681000027c7",
+            "owner" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/1e2c45eb-f240-11ee-0a80-16d90003dc52",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/metadata",
+                "type" : "employee",
+                "mediaType" : "application/json",
+                "uuidHref" : "https://online.moysklad.ru/app/#employee/edit?id=1e2c45eb-f240-11ee-0a80-16d90003dc52"
+              }
+            },
+            "shared" : true,
+            "group" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/group/1e081f6b-f240-11ee-0a80-0681000027c8",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/group/metadata",
+                "type" : "group",
+                "mediaType" : "application/json"
+              }
+            },
+            "updated" : "2025-09-24 10:47:55.432",
+            "name" : "12 Группа 1 ур с очень очень очень очень очень очень очень очень очень очень очень длинным название группы",
+            "externalCode" : "ukmEc-uRjcqyDkpxPOHBq2",
+            "archived" : false,
+            "pathName" : "",
+            "useParentVat" : true
+          } ]
+        }
+  recorded_at: Fri, 14 Nov 2025 08:21:24 GMT
+- request:
+    method: get
+    uri: https://api.moysklad.ru/api/remap/1.2/entity/productfolder?limit=2&offset=26
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.moysklad.ru
+      Authorization:
+      - Basic <TOKEN>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Angie
+      Date:
+      - Fri, 14 Nov 2025 08:21:24 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - no-cache
+      X-Lognex-Reset:
+      - '0'
+      X-Lognex-Retry-After:
+      - '0'
+      X-Lognex-Retry-Timeinterval:
+      - '3000'
+      X-Ratelimit-Remaining:
+      - '44'
+      X-Ratelimit-Limit:
+      - '45'
+      Strict-Transport-Security:
+      - max-age=15552000
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "context" : {
+            "employee" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/context/employee",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/metadata",
+                "type" : "employee",
+                "mediaType" : "application/json"
+              }
+            }
+          },
+          "meta" : {
+            "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder?offset=26&limit=2",
+            "type" : "productfolder",
+            "mediaType" : "application/json",
+            "size" : 46,
+            "limit" : 2,
+            "offset" : 26,
+            "nextHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder?offset=28&limit=2",
+            "previousHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder?offset=24&limit=2"
+          },
+          "rows" : [ {
+            "meta" : {
+              "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/c906d802-991b-11f0-0a80-0ea50005e6f9",
+              "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/metadata",
+              "type" : "productfolder",
+              "mediaType" : "application/json",
+              "uuidHref" : "https://online.moysklad.ru/app/#good/edit?id=c906d802-991b-11f0-0a80-0ea50005e6f9"
+            },
+            "id" : "c906d802-991b-11f0-0a80-0ea50005e6f9",
+            "accountId" : "1e079fd4-f240-11ee-0a80-0681000027c7",
+            "owner" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/1e2c45eb-f240-11ee-0a80-16d90003dc52",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/metadata",
+                "type" : "employee",
+                "mediaType" : "application/json",
+                "uuidHref" : "https://online.moysklad.ru/app/#employee/edit?id=1e2c45eb-f240-11ee-0a80-16d90003dc52"
+              }
+            },
+            "shared" : true,
+            "group" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/group/1e081f6b-f240-11ee-0a80-0681000027c8",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/group/metadata",
+                "type" : "group",
+                "mediaType" : "application/json"
+              }
+            },
+            "updated" : "2025-09-24 10:55:06.431",
+            "name" : "11 Группа 3 ур с очень очень очень очень очень очень очень очень очень очень очень длинным название группы",
+            "externalCode" : "xKYTmd07jf2ntVj7jX5c81",
+            "archived" : false,
+            "pathName" : "11 Группа 1 ур с очень очень очень очень очень очень очень очень очень очень очень длинным название группы/11 Группа 2 ур с очень очень очень очень очень очень очень очень очень очень очень длинным название группы",
+            "productFolder" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/c473dc87-991b-11f0-0a80-15fe0005d37c",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/metadata",
+                "type" : "productfolder",
+                "mediaType" : "application/json",
+                "uuidHref" : "https://online.moysklad.ru/app/#good/edit?id=c473dc87-991b-11f0-0a80-15fe0005d37c"
+              }
+            },
+            "useParentVat" : true
+          }, {
+            "meta" : {
+              "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/cbb070e8-991a-11f0-0a80-08520005f61e",
+              "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/metadata",
+              "type" : "productfolder",
+              "mediaType" : "application/json",
+              "uuidHref" : "https://online.moysklad.ru/app/#good/edit?id=cbb070e8-991a-11f0-0a80-08520005f61e"
+            },
+            "id" : "cbb070e8-991a-11f0-0a80-08520005f61e",
+            "accountId" : "1e079fd4-f240-11ee-0a80-0681000027c7",
+            "owner" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/1e2c45eb-f240-11ee-0a80-16d90003dc52",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/metadata",
+                "type" : "employee",
+                "mediaType" : "application/json",
+                "uuidHref" : "https://online.moysklad.ru/app/#employee/edit?id=1e2c45eb-f240-11ee-0a80-16d90003dc52"
+              }
+            },
+            "shared" : true,
+            "group" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/group/1e081f6b-f240-11ee-0a80-0681000027c8",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/group/metadata",
+                "type" : "group",
+                "mediaType" : "application/json"
+              }
+            },
+            "updated" : "2025-09-24 10:48:01.402",
+            "name" : "13 Группа 1 ур с очень очень очень очень очень очень очень очень очень очень очень длинным название группы",
+            "externalCode" : "9vVciyvqjkjK1Wf6f5R702",
+            "archived" : false,
+            "pathName" : "",
+            "useParentVat" : true
+          } ]
+        }
+  recorded_at: Fri, 14 Nov 2025 08:21:24 GMT
+- request:
+    method: get
+    uri: https://api.moysklad.ru/api/remap/1.2/entity/productfolder?limit=2&offset=28
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.moysklad.ru
+      Authorization:
+      - Basic <TOKEN>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Angie
+      Date:
+      - Fri, 14 Nov 2025 08:21:25 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - no-cache
+      X-Lognex-Reset:
+      - '0'
+      X-Lognex-Retry-After:
+      - '0'
+      X-Lognex-Retry-Timeinterval:
+      - '3000'
+      X-Ratelimit-Remaining:
+      - '44'
+      X-Ratelimit-Limit:
+      - '45'
+      Strict-Transport-Security:
+      - max-age=15552000
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "context" : {
+            "employee" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/context/employee",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/metadata",
+                "type" : "employee",
+                "mediaType" : "application/json"
+              }
+            }
+          },
+          "meta" : {
+            "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder?offset=28&limit=2",
+            "type" : "productfolder",
+            "mediaType" : "application/json",
+            "size" : 46,
+            "limit" : 2,
+            "offset" : 28,
+            "nextHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder?offset=30&limit=2",
+            "previousHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder?offset=26&limit=2"
+          },
+          "rows" : [ {
+            "meta" : {
+              "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/cbe8432b-991b-11f0-0a80-0cce00061ff4",
+              "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/metadata",
+              "type" : "productfolder",
+              "mediaType" : "application/json",
+              "uuidHref" : "https://online.moysklad.ru/app/#good/edit?id=cbe8432b-991b-11f0-0a80-0cce00061ff4"
+            },
+            "id" : "cbe8432b-991b-11f0-0a80-0cce00061ff4",
+            "accountId" : "1e079fd4-f240-11ee-0a80-0681000027c7",
+            "owner" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/1e2c45eb-f240-11ee-0a80-16d90003dc52",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/metadata",
+                "type" : "employee",
+                "mediaType" : "application/json",
+                "uuidHref" : "https://online.moysklad.ru/app/#employee/edit?id=1e2c45eb-f240-11ee-0a80-16d90003dc52"
+              }
+            },
+            "shared" : true,
+            "group" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/group/1e081f6b-f240-11ee-0a80-0681000027c8",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/group/metadata",
+                "type" : "group",
+                "mediaType" : "application/json"
+              }
+            },
+            "updated" : "2025-09-24 10:55:11.264",
+            "name" : "11 Группа 4 ур с очень очень очень очень очень очень очень очень очень очень очень длинным название группы",
+            "externalCode" : "HDmTvF-Vgl05OZaoDtsdv0",
+            "archived" : false,
+            "pathName" : "11 Группа 1 ур с очень очень очень очень очень очень очень очень очень очень очень длинным название группы/11 Группа 2 ур с очень очень очень очень очень очень очень очень очень очень очень длинным название группы/11 Группа 3 ур с очень очень очень очень очень очень очень очень очень очень очень длинным название группы",
+            "productFolder" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/c906d802-991b-11f0-0a80-0ea50005e6f9",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/metadata",
+                "type" : "productfolder",
+                "mediaType" : "application/json",
+                "uuidHref" : "https://online.moysklad.ru/app/#good/edit?id=c906d802-991b-11f0-0a80-0ea50005e6f9"
+              }
+            },
+            "useParentVat" : true
+          }, {
+            "meta" : {
+              "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/ceb3f149-991a-11f0-0a80-0f0e0005ccd6",
+              "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/metadata",
+              "type" : "productfolder",
+              "mediaType" : "application/json",
+              "uuidHref" : "https://online.moysklad.ru/app/#good/edit?id=ceb3f149-991a-11f0-0a80-0f0e0005ccd6"
+            },
+            "id" : "ceb3f149-991a-11f0-0a80-0f0e0005ccd6",
+            "accountId" : "1e079fd4-f240-11ee-0a80-0681000027c7",
+            "owner" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/1e2c45eb-f240-11ee-0a80-16d90003dc52",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/metadata",
+                "type" : "employee",
+                "mediaType" : "application/json",
+                "uuidHref" : "https://online.moysklad.ru/app/#employee/edit?id=1e2c45eb-f240-11ee-0a80-16d90003dc52"
+              }
+            },
+            "shared" : true,
+            "group" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/group/1e081f6b-f240-11ee-0a80-0681000027c8",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/group/metadata",
+                "type" : "group",
+                "mediaType" : "application/json"
+              }
+            },
+            "updated" : "2025-09-24 10:48:06.458",
+            "name" : "14 Группа 1 ур с очень очень очень очень очень очень очень очень очень очень очень длинным название группы",
+            "externalCode" : "0qUHmdQah0GXPmvhnpsYD3",
+            "archived" : false,
+            "pathName" : "",
+            "useParentVat" : true
+          } ]
+        }
+  recorded_at: Fri, 14 Nov 2025 08:21:25 GMT
+- request:
+    method: get
+    uri: https://api.moysklad.ru/api/remap/1.2/entity/productfolder?limit=2&offset=30
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.moysklad.ru
+      Authorization:
+      - Basic <TOKEN>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Angie
+      Date:
+      - Fri, 14 Nov 2025 08:21:25 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - no-cache
+      X-Lognex-Reset:
+      - '0'
+      X-Lognex-Retry-After:
+      - '0'
+      X-Lognex-Retry-Timeinterval:
+      - '3000'
+      X-Ratelimit-Remaining:
+      - '44'
+      X-Ratelimit-Limit:
+      - '45'
+      Strict-Transport-Security:
+      - max-age=15552000
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "context" : {
+            "employee" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/context/employee",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/metadata",
+                "type" : "employee",
+                "mediaType" : "application/json"
+              }
+            }
+          },
+          "meta" : {
+            "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder?offset=30&limit=2",
+            "type" : "productfolder",
+            "mediaType" : "application/json",
+            "size" : 46,
+            "limit" : 2,
+            "offset" : 30,
+            "nextHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder?offset=32&limit=2",
+            "previousHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder?offset=28&limit=2"
+          },
+          "rows" : [ {
+            "meta" : {
+              "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/d0228574-991b-11f0-0a80-0cce000620e7",
+              "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/metadata",
+              "type" : "productfolder",
+              "mediaType" : "application/json",
+              "uuidHref" : "https://online.moysklad.ru/app/#good/edit?id=d0228574-991b-11f0-0a80-0cce000620e7"
+            },
+            "id" : "d0228574-991b-11f0-0a80-0cce000620e7",
+            "accountId" : "1e079fd4-f240-11ee-0a80-0681000027c7",
+            "owner" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/1e2c45eb-f240-11ee-0a80-16d90003dc52",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/metadata",
+                "type" : "employee",
+                "mediaType" : "application/json",
+                "uuidHref" : "https://online.moysklad.ru/app/#employee/edit?id=1e2c45eb-f240-11ee-0a80-16d90003dc52"
+              }
+            },
+            "shared" : true,
+            "group" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/group/1e081f6b-f240-11ee-0a80-0681000027c8",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/group/metadata",
+                "type" : "group",
+                "mediaType" : "application/json"
+              }
+            },
+            "updated" : "2025-09-24 10:55:18.357",
+            "name" : "11 Группа 2 ур с очень очень очень очень очень очень очень очень очень очень очень длинным название группы",
+            "externalCode" : "jvTBkC5fiIrveYTeTsXmf0",
+            "archived" : false,
+            "pathName" : "12 Группа 1 ур с очень очень очень очень очень очень очень очень очень очень очень длинным название группы",
+            "productFolder" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/c8218656-991a-11f0-0a80-0f0e0005cb4f",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/metadata",
+                "type" : "productfolder",
+                "mediaType" : "application/json",
+                "uuidHref" : "https://online.moysklad.ru/app/#good/edit?id=c8218656-991a-11f0-0a80-0f0e0005cb4f"
+              }
+            },
+            "useParentVat" : true
+          }, {
+            "meta" : {
+              "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/d2681ad1-991b-11f0-0a80-143c00068d8e",
+              "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/metadata",
+              "type" : "productfolder",
+              "mediaType" : "application/json",
+              "uuidHref" : "https://online.moysklad.ru/app/#good/edit?id=d2681ad1-991b-11f0-0a80-143c00068d8e"
+            },
+            "id" : "d2681ad1-991b-11f0-0a80-143c00068d8e",
+            "accountId" : "1e079fd4-f240-11ee-0a80-0681000027c7",
+            "owner" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/1e2c45eb-f240-11ee-0a80-16d90003dc52",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/metadata",
+                "type" : "employee",
+                "mediaType" : "application/json",
+                "uuidHref" : "https://online.moysklad.ru/app/#employee/edit?id=1e2c45eb-f240-11ee-0a80-16d90003dc52"
+              }
+            },
+            "shared" : true,
+            "group" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/group/1e081f6b-f240-11ee-0a80-0681000027c8",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/group/metadata",
+                "type" : "group",
+                "mediaType" : "application/json"
+              }
+            },
+            "updated" : "2025-09-24 10:55:22.168",
+            "name" : "11 Группа 3 ур с очень очень очень очень очень очень очень очень очень очень очень длинным название группы",
+            "externalCode" : "1kBTJcXyhlgn0HawWKYiM1",
+            "archived" : false,
+            "pathName" : "12 Группа 1 ур с очень очень очень очень очень очень очень очень очень очень очень длинным название группы/11 Группа 2 ур с очень очень очень очень очень очень очень очень очень очень очень длинным название группы",
+            "productFolder" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/d0228574-991b-11f0-0a80-0cce000620e7",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/metadata",
+                "type" : "productfolder",
+                "mediaType" : "application/json",
+                "uuidHref" : "https://online.moysklad.ru/app/#good/edit?id=d0228574-991b-11f0-0a80-0cce000620e7"
+              }
+            },
+            "useParentVat" : true
+          } ]
+        }
+  recorded_at: Fri, 14 Nov 2025 08:21:25 GMT
+- request:
+    method: get
+    uri: https://api.moysklad.ru/api/remap/1.2/entity/productfolder?limit=2&offset=32
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.moysklad.ru
+      Authorization:
+      - Basic <TOKEN>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Angie
+      Date:
+      - Fri, 14 Nov 2025 08:21:25 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - no-cache
+      X-Lognex-Reset:
+      - '0'
+      X-Lognex-Retry-After:
+      - '0'
+      X-Lognex-Retry-Timeinterval:
+      - '3000'
+      X-Ratelimit-Remaining:
+      - '44'
+      X-Ratelimit-Limit:
+      - '45'
+      Strict-Transport-Security:
+      - max-age=15552000
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "context" : {
+            "employee" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/context/employee",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/metadata",
+                "type" : "employee",
+                "mediaType" : "application/json"
+              }
+            }
+          },
+          "meta" : {
+            "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder?offset=32&limit=2",
+            "type" : "productfolder",
+            "mediaType" : "application/json",
+            "size" : 46,
+            "limit" : 2,
+            "offset" : 32,
+            "nextHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder?offset=34&limit=2",
+            "previousHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder?offset=30&limit=2"
+          },
+          "rows" : [ {
+            "meta" : {
+              "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/d3903779-991a-11f0-0a80-07320005c051",
+              "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/metadata",
+              "type" : "productfolder",
+              "mediaType" : "application/json",
+              "uuidHref" : "https://online.moysklad.ru/app/#good/edit?id=d3903779-991a-11f0-0a80-07320005c051"
+            },
+            "id" : "d3903779-991a-11f0-0a80-07320005c051",
+            "accountId" : "1e079fd4-f240-11ee-0a80-0681000027c7",
+            "owner" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/1e2c45eb-f240-11ee-0a80-16d90003dc52",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/metadata",
+                "type" : "employee",
+                "mediaType" : "application/json",
+                "uuidHref" : "https://online.moysklad.ru/app/#employee/edit?id=1e2c45eb-f240-11ee-0a80-16d90003dc52"
+              }
+            },
+            "shared" : true,
+            "group" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/group/1e081f6b-f240-11ee-0a80-0681000027c8",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/group/metadata",
+                "type" : "group",
+                "mediaType" : "application/json"
+              }
+            },
+            "updated" : "2025-09-24 10:48:14.613",
+            "name" : "15 Группа 1 ур с очень очень очень очень очень очень очень очень очень очень очень длинным название группы",
+            "externalCode" : "s7KX1YRsjeg4695ITQ04Q3",
+            "archived" : false,
+            "pathName" : "",
+            "useParentVat" : true
+          }, {
+            "meta" : {
+              "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/d4d430b1-991b-11f0-0a80-0cce000621dc",
+              "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/metadata",
+              "type" : "productfolder",
+              "mediaType" : "application/json",
+              "uuidHref" : "https://online.moysklad.ru/app/#good/edit?id=d4d430b1-991b-11f0-0a80-0cce000621dc"
+            },
+            "id" : "d4d430b1-991b-11f0-0a80-0cce000621dc",
+            "accountId" : "1e079fd4-f240-11ee-0a80-0681000027c7",
+            "owner" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/1e2c45eb-f240-11ee-0a80-16d90003dc52",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/metadata",
+                "type" : "employee",
+                "mediaType" : "application/json",
+                "uuidHref" : "https://online.moysklad.ru/app/#employee/edit?id=1e2c45eb-f240-11ee-0a80-16d90003dc52"
+              }
+            },
+            "shared" : true,
+            "group" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/group/1e081f6b-f240-11ee-0a80-0681000027c8",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/group/metadata",
+                "type" : "group",
+                "mediaType" : "application/json"
+              }
+            },
+            "updated" : "2025-09-24 10:55:26.232",
+            "name" : "11 Группа 4 ур с очень очень очень очень очень очень очень очень очень очень очень длинным название группы",
+            "externalCode" : "0O2xFJ5bhGpENOE70hOWX2",
+            "archived" : false,
+            "pathName" : "12 Группа 1 ур с очень очень очень очень очень очень очень очень очень очень очень длинным название группы/11 Группа 2 ур с очень очень очень очень очень очень очень очень очень очень очень длинным название группы/11 Группа 3 ур с очень очень очень очень очень очень очень очень очень очень очень длинным название группы",
+            "productFolder" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/d2681ad1-991b-11f0-0a80-143c00068d8e",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/metadata",
+                "type" : "productfolder",
+                "mediaType" : "application/json",
+                "uuidHref" : "https://online.moysklad.ru/app/#good/edit?id=d2681ad1-991b-11f0-0a80-143c00068d8e"
+              }
+            },
+            "useParentVat" : true
+          } ]
+        }
+  recorded_at: Fri, 14 Nov 2025 08:21:25 GMT
+- request:
+    method: get
+    uri: https://api.moysklad.ru/api/remap/1.2/entity/productfolder?limit=2&offset=34
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.moysklad.ru
+      Authorization:
+      - Basic <TOKEN>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Angie
+      Date:
+      - Fri, 14 Nov 2025 08:21:26 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - no-cache
+      X-Lognex-Reset:
+      - '0'
+      X-Lognex-Retry-After:
+      - '0'
+      X-Lognex-Retry-Timeinterval:
+      - '3000'
+      X-Ratelimit-Remaining:
+      - '44'
+      X-Ratelimit-Limit:
+      - '45'
+      Strict-Transport-Security:
+      - max-age=15552000
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "context" : {
+            "employee" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/context/employee",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/metadata",
+                "type" : "employee",
+                "mediaType" : "application/json"
+              }
+            }
+          },
+          "meta" : {
+            "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder?offset=34&limit=2",
+            "type" : "productfolder",
+            "mediaType" : "application/json",
+            "size" : 46,
+            "limit" : 2,
+            "offset" : 34,
+            "nextHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder?offset=36&limit=2",
+            "previousHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder?offset=32&limit=2"
+          },
+          "rows" : [ {
+            "meta" : {
+              "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/d61b3d65-991a-11f0-0a80-08520005fa4d",
+              "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/metadata",
+              "type" : "productfolder",
+              "mediaType" : "application/json",
+              "uuidHref" : "https://online.moysklad.ru/app/#good/edit?id=d61b3d65-991a-11f0-0a80-08520005fa4d"
+            },
+            "id" : "d61b3d65-991a-11f0-0a80-08520005fa4d",
+            "accountId" : "1e079fd4-f240-11ee-0a80-0681000027c7",
+            "owner" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/1e2c45eb-f240-11ee-0a80-16d90003dc52",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/metadata",
+                "type" : "employee",
+                "mediaType" : "application/json",
+                "uuidHref" : "https://online.moysklad.ru/app/#employee/edit?id=1e2c45eb-f240-11ee-0a80-16d90003dc52"
+              }
+            },
+            "shared" : true,
+            "group" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/group/1e081f6b-f240-11ee-0a80-0681000027c8",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/group/metadata",
+                "type" : "group",
+                "mediaType" : "application/json"
+              }
+            },
+            "updated" : "2025-09-24 10:48:22.936",
+            "name" : "16 Группа 1 ур с очень очень очень очень очень очень очень очень очень очень очень длинным название группы",
+            "externalCode" : "xpJj294OhrZ6hh1ijLMSd1",
+            "archived" : false,
+            "pathName" : "",
+            "useParentVat" : true
+          }, {
+            "meta" : {
+              "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/d6f1de53-991b-11f0-0a80-07320005f2e6",
+              "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/metadata",
+              "type" : "productfolder",
+              "mediaType" : "application/json",
+              "uuidHref" : "https://online.moysklad.ru/app/#good/edit?id=d6f1de53-991b-11f0-0a80-07320005f2e6"
+            },
+            "id" : "d6f1de53-991b-11f0-0a80-07320005f2e6",
+            "accountId" : "1e079fd4-f240-11ee-0a80-0681000027c7",
+            "owner" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/1e2c45eb-f240-11ee-0a80-16d90003dc52",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/metadata",
+                "type" : "employee",
+                "mediaType" : "application/json",
+                "uuidHref" : "https://online.moysklad.ru/app/#employee/edit?id=1e2c45eb-f240-11ee-0a80-16d90003dc52"
+              }
+            },
+            "shared" : true,
+            "group" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/group/1e081f6b-f240-11ee-0a80-0681000027c8",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/group/metadata",
+                "type" : "group",
+                "mediaType" : "application/json"
+              }
+            },
+            "updated" : "2025-09-24 10:55:29.782",
+            "name" : "11 Группа 5 ур с очень очень очень очень очень очень очень очень очень очень очень длинным название группы",
+            "externalCode" : "OhIWP-JrgoSPXadB4p86d2",
+            "archived" : false,
+            "pathName" : "12 Группа 1 ур с очень очень очень очень очень очень очень очень очень очень очень длинным название группы/11 Группа 2 ур с очень очень очень очень очень очень очень очень очень очень очень длинным название группы/11 Группа 3 ур с очень очень очень очень очень очень очень очень очень очень очень длинным название группы/11 Группа 4 ур с очень очень очень очень очень очень очень очень очень очень очень длинным название группы",
+            "productFolder" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/d4d430b1-991b-11f0-0a80-0cce000621dc",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/metadata",
+                "type" : "productfolder",
+                "mediaType" : "application/json",
+                "uuidHref" : "https://online.moysklad.ru/app/#good/edit?id=d4d430b1-991b-11f0-0a80-0cce000621dc"
+              }
+            },
+            "useParentVat" : true
+          } ]
+        }
+  recorded_at: Fri, 14 Nov 2025 08:21:26 GMT
+- request:
+    method: get
+    uri: https://api.moysklad.ru/api/remap/1.2/entity/productfolder?limit=2&offset=36
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.moysklad.ru
+      Authorization:
+      - Basic <TOKEN>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Angie
+      Date:
+      - Fri, 14 Nov 2025 08:21:26 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - no-cache
+      X-Lognex-Reset:
+      - '0'
+      X-Lognex-Retry-After:
+      - '0'
+      X-Lognex-Retry-Timeinterval:
+      - '3000'
+      X-Ratelimit-Remaining:
+      - '44'
+      X-Ratelimit-Limit:
+      - '45'
+      Strict-Transport-Security:
+      - max-age=15552000
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "context" : {
+            "employee" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/context/employee",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/metadata",
+                "type" : "employee",
+                "mediaType" : "application/json"
+              }
+            }
+          },
+          "meta" : {
+            "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder?offset=36&limit=2",
+            "type" : "productfolder",
+            "mediaType" : "application/json",
+            "size" : 46,
+            "limit" : 2,
+            "offset" : 36,
+            "nextHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder?offset=38&limit=2",
+            "previousHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder?offset=34&limit=2"
+          },
+          "rows" : [ {
+            "meta" : {
+              "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/dbcbb893-991a-11f0-0a80-02c60005b587",
+              "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/metadata",
+              "type" : "productfolder",
+              "mediaType" : "application/json",
+              "uuidHref" : "https://online.moysklad.ru/app/#good/edit?id=dbcbb893-991a-11f0-0a80-02c60005b587"
+            },
+            "id" : "dbcbb893-991a-11f0-0a80-02c60005b587",
+            "accountId" : "1e079fd4-f240-11ee-0a80-0681000027c7",
+            "owner" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/1e2c45eb-f240-11ee-0a80-16d90003dc52",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/metadata",
+                "type" : "employee",
+                "mediaType" : "application/json",
+                "uuidHref" : "https://online.moysklad.ru/app/#employee/edit?id=1e2c45eb-f240-11ee-0a80-16d90003dc52"
+              }
+            },
+            "shared" : true,
+            "group" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/group/1e081f6b-f240-11ee-0a80-0681000027c8",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/group/metadata",
+                "type" : "group",
+                "mediaType" : "application/json"
+              }
+            },
+            "updated" : "2025-09-24 10:48:28.425",
+            "name" : "17 Группа 1 ур с очень очень очень очень очень очень очень очень очень очень очень длинным название группы",
+            "externalCode" : "7QKUfL7MhgmXSu-pHG5o60",
+            "archived" : false,
+            "pathName" : "",
+            "useParentVat" : true
+          }, {
+            "meta" : {
+              "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/dea31f4f-991a-11f0-0a80-19ca0005e916",
+              "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/metadata",
+              "type" : "productfolder",
+              "mediaType" : "application/json",
+              "uuidHref" : "https://online.moysklad.ru/app/#good/edit?id=dea31f4f-991a-11f0-0a80-19ca0005e916"
+            },
+            "id" : "dea31f4f-991a-11f0-0a80-19ca0005e916",
+            "accountId" : "1e079fd4-f240-11ee-0a80-0681000027c7",
+            "owner" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/1e2c45eb-f240-11ee-0a80-16d90003dc52",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/metadata",
+                "type" : "employee",
+                "mediaType" : "application/json",
+                "uuidHref" : "https://online.moysklad.ru/app/#employee/edit?id=1e2c45eb-f240-11ee-0a80-16d90003dc52"
+              }
+            },
+            "shared" : true,
+            "group" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/group/1e081f6b-f240-11ee-0a80-0681000027c8",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/group/metadata",
+                "type" : "group",
+                "mediaType" : "application/json"
+              }
+            },
+            "updated" : "2025-09-24 10:48:33.192",
+            "name" : "18 Группа 1 ур с очень очень очень очень очень очень очень очень очень очень очень длинным название группы",
+            "externalCode" : "VJVA2aFwi7Zpl2Vy-knNs3",
+            "archived" : false,
+            "pathName" : "",
+            "useParentVat" : true
+          } ]
+        }
+  recorded_at: Fri, 14 Nov 2025 08:21:26 GMT
+- request:
+    method: get
+    uri: https://api.moysklad.ru/api/remap/1.2/entity/productfolder?limit=2&offset=38
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.moysklad.ru
+      Authorization:
+      - Basic <TOKEN>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Angie
+      Date:
+      - Fri, 14 Nov 2025 08:21:26 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - no-cache
+      X-Lognex-Reset:
+      - '0'
+      X-Lognex-Retry-After:
+      - '0'
+      X-Lognex-Retry-Timeinterval:
+      - '3000'
+      X-Ratelimit-Remaining:
+      - '44'
+      X-Ratelimit-Limit:
+      - '45'
+      Strict-Transport-Security:
+      - max-age=15552000
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "context" : {
+            "employee" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/context/employee",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/metadata",
+                "type" : "employee",
+                "mediaType" : "application/json"
+              }
+            }
+          },
+          "meta" : {
+            "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder?offset=38&limit=2",
+            "type" : "productfolder",
+            "mediaType" : "application/json",
+            "size" : 46,
+            "limit" : 2,
+            "offset" : 38,
+            "nextHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder?offset=40&limit=2",
+            "previousHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder?offset=36&limit=2"
+          },
+          "rows" : [ {
+            "meta" : {
+              "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/e12cc2b8-991a-11f0-0a80-0cce0005ee11",
+              "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/metadata",
+              "type" : "productfolder",
+              "mediaType" : "application/json",
+              "uuidHref" : "https://online.moysklad.ru/app/#good/edit?id=e12cc2b8-991a-11f0-0a80-0cce0005ee11"
+            },
+            "id" : "e12cc2b8-991a-11f0-0a80-0cce0005ee11",
+            "accountId" : "1e079fd4-f240-11ee-0a80-0681000027c7",
+            "owner" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/1e2c45eb-f240-11ee-0a80-16d90003dc52",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/metadata",
+                "type" : "employee",
+                "mediaType" : "application/json",
+                "uuidHref" : "https://online.moysklad.ru/app/#employee/edit?id=1e2c45eb-f240-11ee-0a80-16d90003dc52"
+              }
+            },
+            "shared" : true,
+            "group" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/group/1e081f6b-f240-11ee-0a80-0681000027c8",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/group/metadata",
+                "type" : "group",
+                "mediaType" : "application/json"
+              }
+            },
+            "updated" : "2025-09-24 10:48:37.450",
+            "name" : "19 Группа 1 ур с очень очень очень очень очень очень очень очень очень очень очень длинным название группы",
+            "externalCode" : "FMMSkY20iqIJlk4BLTGGB1",
+            "archived" : false,
+            "pathName" : "",
+            "useParentVat" : true
+          }, {
+            "meta" : {
+              "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/e3e8c2ee-991a-11f0-0a80-02c60005b788",
+              "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/metadata",
+              "type" : "productfolder",
+              "mediaType" : "application/json",
+              "uuidHref" : "https://online.moysklad.ru/app/#good/edit?id=e3e8c2ee-991a-11f0-0a80-02c60005b788"
+            },
+            "id" : "e3e8c2ee-991a-11f0-0a80-02c60005b788",
+            "accountId" : "1e079fd4-f240-11ee-0a80-0681000027c7",
+            "owner" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/1e2c45eb-f240-11ee-0a80-16d90003dc52",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/metadata",
+                "type" : "employee",
+                "mediaType" : "application/json",
+                "uuidHref" : "https://online.moysklad.ru/app/#employee/edit?id=1e2c45eb-f240-11ee-0a80-16d90003dc52"
+              }
+            },
+            "shared" : true,
+            "group" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/group/1e081f6b-f240-11ee-0a80-0681000027c8",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/group/metadata",
+                "type" : "group",
+                "mediaType" : "application/json"
+              }
+            },
+            "updated" : "2025-09-24 10:48:42.037",
+            "name" : "20 Группа 1 ур с очень очень очень очень очень очень очень очень очень очень очень длинным название группы",
+            "externalCode" : "MzL7FzHfjuhu4oLBq2wPg1",
+            "archived" : false,
+            "pathName" : "",
+            "useParentVat" : true
+          } ]
+        }
+  recorded_at: Fri, 14 Nov 2025 08:21:26 GMT
+- request:
+    method: get
+    uri: https://api.moysklad.ru/api/remap/1.2/entity/productfolder?limit=2&offset=40
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.moysklad.ru
+      Authorization:
+      - Basic <TOKEN>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Angie
+      Date:
+      - Fri, 14 Nov 2025 08:21:27 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - no-cache
+      X-Lognex-Reset:
+      - '0'
+      X-Lognex-Retry-After:
+      - '0'
+      X-Lognex-Retry-Timeinterval:
+      - '3000'
+      X-Ratelimit-Remaining:
+      - '44'
+      X-Ratelimit-Limit:
+      - '45'
+      Strict-Transport-Security:
+      - max-age=15552000
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "context" : {
+            "employee" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/context/employee",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/metadata",
+                "type" : "employee",
+                "mediaType" : "application/json"
+              }
+            }
+          },
+          "meta" : {
+            "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder?offset=40&limit=2",
+            "type" : "productfolder",
+            "mediaType" : "application/json",
+            "size" : 46,
+            "limit" : 2,
+            "offset" : 40,
+            "nextHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder?offset=42&limit=2",
+            "previousHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder?offset=38&limit=2"
+          },
+          "rows" : [ {
+            "meta" : {
+              "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/f31d8b60-991a-11f0-0a80-02c60005ba38",
+              "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/metadata",
+              "type" : "productfolder",
+              "mediaType" : "application/json",
+              "uuidHref" : "https://online.moysklad.ru/app/#good/edit?id=f31d8b60-991a-11f0-0a80-02c60005ba38"
+            },
+            "id" : "f31d8b60-991a-11f0-0a80-02c60005ba38",
+            "accountId" : "1e079fd4-f240-11ee-0a80-0681000027c7",
+            "owner" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/1e2c45eb-f240-11ee-0a80-16d90003dc52",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/metadata",
+                "type" : "employee",
+                "mediaType" : "application/json",
+                "uuidHref" : "https://online.moysklad.ru/app/#employee/edit?id=1e2c45eb-f240-11ee-0a80-16d90003dc52"
+              }
+            },
+            "shared" : true,
+            "group" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/group/1e081f6b-f240-11ee-0a80-0681000027c8",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/group/metadata",
+                "type" : "group",
+                "mediaType" : "application/json"
+              }
+            },
+            "updated" : "2025-09-24 10:49:07.549",
+            "name" : "21 Обычная Группа 1 ур ABC",
+            "externalCode" : "1W-0zwJ7g1XPhpiNZcx7d2",
+            "archived" : false,
+            "pathName" : "",
+            "useParentVat" : true
+          }, {
+            "meta" : {
+              "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/f70596b8-991a-11f0-0a80-18e40005b5fc",
+              "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/metadata",
+              "type" : "productfolder",
+              "mediaType" : "application/json",
+              "uuidHref" : "https://online.moysklad.ru/app/#good/edit?id=f70596b8-991a-11f0-0a80-18e40005b5fc"
+            },
+            "id" : "f70596b8-991a-11f0-0a80-18e40005b5fc",
+            "accountId" : "1e079fd4-f240-11ee-0a80-0681000027c7",
+            "owner" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/1e2c45eb-f240-11ee-0a80-16d90003dc52",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/metadata",
+                "type" : "employee",
+                "mediaType" : "application/json",
+                "uuidHref" : "https://online.moysklad.ru/app/#employee/edit?id=1e2c45eb-f240-11ee-0a80-16d90003dc52"
+              }
+            },
+            "shared" : true,
+            "group" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/group/1e081f6b-f240-11ee-0a80-0681000027c8",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/group/metadata",
+                "type" : "group",
+                "mediaType" : "application/json"
+              }
+            },
+            "updated" : "2025-09-24 10:49:14.102",
+            "name" : "22 Обычная Группа 1 ур ABC",
+            "externalCode" : "eV1BP47xgSBMSzQJ0aImN3",
+            "archived" : false,
+            "pathName" : "",
+            "useParentVat" : true
+          } ]
+        }
+  recorded_at: Fri, 14 Nov 2025 08:21:27 GMT
+- request:
+    method: get
+    uri: https://api.moysklad.ru/api/remap/1.2/entity/productfolder?limit=2&offset=42
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.moysklad.ru
+      Authorization:
+      - Basic <TOKEN>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Angie
+      Date:
+      - Fri, 14 Nov 2025 08:21:27 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - no-cache
+      X-Lognex-Reset:
+      - '0'
+      X-Lognex-Retry-After:
+      - '0'
+      X-Lognex-Retry-Timeinterval:
+      - '3000'
+      X-Ratelimit-Remaining:
+      - '44'
+      X-Ratelimit-Limit:
+      - '45'
+      Strict-Transport-Security:
+      - max-age=15552000
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "context" : {
+            "employee" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/context/employee",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/metadata",
+                "type" : "employee",
+                "mediaType" : "application/json"
+              }
+            }
+          },
+          "meta" : {
+            "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder?offset=42&limit=2",
+            "type" : "productfolder",
+            "mediaType" : "application/json",
+            "size" : 46,
+            "limit" : 2,
+            "offset" : 42,
+            "nextHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder?offset=44&limit=2",
+            "previousHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder?offset=40&limit=2"
+          },
+          "rows" : [ {
+            "meta" : {
+              "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/fa458949-991a-11f0-0a80-08520006028e",
+              "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/metadata",
+              "type" : "productfolder",
+              "mediaType" : "application/json",
+              "uuidHref" : "https://online.moysklad.ru/app/#good/edit?id=fa458949-991a-11f0-0a80-08520006028e"
+            },
+            "id" : "fa458949-991a-11f0-0a80-08520006028e",
+            "accountId" : "1e079fd4-f240-11ee-0a80-0681000027c7",
+            "owner" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/1e2c45eb-f240-11ee-0a80-16d90003dc52",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/metadata",
+                "type" : "employee",
+                "mediaType" : "application/json",
+                "uuidHref" : "https://online.moysklad.ru/app/#employee/edit?id=1e2c45eb-f240-11ee-0a80-16d90003dc52"
+              }
+            },
+            "shared" : true,
+            "group" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/group/1e081f6b-f240-11ee-0a80-0681000027c8",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/group/metadata",
+                "type" : "group",
+                "mediaType" : "application/json"
+              }
+            },
+            "updated" : "2025-09-24 10:49:19.555",
+            "name" : "23 Обычная Группа 1 ур ABC",
+            "externalCode" : "tSZzenrYiMWhpyKyFK7e-2",
+            "archived" : false,
+            "pathName" : "",
+            "useParentVat" : true
+          }, {
+            "meta" : {
+              "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/fa517a62-b4a9-11f0-0a80-160c001ee249",
+              "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/metadata",
+              "type" : "productfolder",
+              "mediaType" : "application/json",
+              "uuidHref" : "https://online.moysklad.ru/app/#good/edit?id=fa517a62-b4a9-11f0-0a80-160c001ee249"
+            },
+            "id" : "fa517a62-b4a9-11f0-0a80-160c001ee249",
+            "accountId" : "1e079fd4-f240-11ee-0a80-0681000027c7",
+            "owner" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/1e2c45eb-f240-11ee-0a80-16d90003dc52",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/metadata",
+                "type" : "employee",
+                "mediaType" : "application/json",
+                "uuidHref" : "https://online.moysklad.ru/app/#employee/edit?id=1e2c45eb-f240-11ee-0a80-16d90003dc52"
+              }
+            },
+            "shared" : true,
+            "group" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/group/1e081f6b-f240-11ee-0a80-0681000027c8",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/group/metadata",
+                "type" : "group",
+                "mediaType" : "application/json"
+              }
+            },
+            "updated" : "2025-10-29 12:30:59.060",
+            "name" : "1 Родительская группа с товаром",
+            "externalCode" : "py7eJaqmgn28lJwhPg0Zj0",
+            "archived" : false,
+            "pathName" : "",
+            "useParentVat" : true
+          } ]
+        }
+  recorded_at: Fri, 14 Nov 2025 08:21:27 GMT
+- request:
+    method: get
+    uri: https://api.moysklad.ru/api/remap/1.2/entity/productfolder?limit=2&offset=44
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.moysklad.ru
+      Authorization:
+      - Basic <TOKEN>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Angie
+      Date:
+      - Fri, 14 Nov 2025 08:21:27 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - no-cache
+      X-Lognex-Reset:
+      - '0'
+      X-Lognex-Retry-After:
+      - '0'
+      X-Lognex-Retry-Timeinterval:
+      - '3000'
+      X-Ratelimit-Remaining:
+      - '44'
+      X-Ratelimit-Limit:
+      - '45'
+      Strict-Transport-Security:
+      - max-age=15552000
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "context" : {
+            "employee" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/context/employee",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/metadata",
+                "type" : "employee",
+                "mediaType" : "application/json"
+              }
+            }
+          },
+          "meta" : {
+            "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder?offset=44&limit=2",
+            "type" : "productfolder",
+            "mediaType" : "application/json",
+            "size" : 46,
+            "limit" : 2,
+            "offset" : 44,
+            "previousHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder?offset=42&limit=2"
+          },
+          "rows" : [ {
+            "meta" : {
+              "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/fd0357ab-991a-11f0-0a80-1616000587b3",
+              "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/metadata",
+              "type" : "productfolder",
+              "mediaType" : "application/json",
+              "uuidHref" : "https://online.moysklad.ru/app/#good/edit?id=fd0357ab-991a-11f0-0a80-1616000587b3"
+            },
+            "id" : "fd0357ab-991a-11f0-0a80-1616000587b3",
+            "accountId" : "1e079fd4-f240-11ee-0a80-0681000027c7",
+            "owner" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/1e2c45eb-f240-11ee-0a80-16d90003dc52",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/metadata",
+                "type" : "employee",
+                "mediaType" : "application/json",
+                "uuidHref" : "https://online.moysklad.ru/app/#employee/edit?id=1e2c45eb-f240-11ee-0a80-16d90003dc52"
+              }
+            },
+            "shared" : true,
+            "group" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/group/1e081f6b-f240-11ee-0a80-0681000027c8",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/group/metadata",
+                "type" : "group",
+                "mediaType" : "application/json"
+              }
+            },
+            "updated" : "2025-09-24 10:49:24.153",
+            "name" : "24 Обычная Группа 1 ур ABC",
+            "externalCode" : "TLSZLQpDjC9vfdjk8Q30W3",
+            "archived" : false,
+            "pathName" : "",
+            "useParentVat" : true
+          }, {
+            "meta" : {
+              "href" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/ffadf0eb-991a-11f0-0a80-18e40005bab5",
+              "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/productfolder/metadata",
+              "type" : "productfolder",
+              "mediaType" : "application/json",
+              "uuidHref" : "https://online.moysklad.ru/app/#good/edit?id=ffadf0eb-991a-11f0-0a80-18e40005bab5"
+            },
+            "id" : "ffadf0eb-991a-11f0-0a80-18e40005bab5",
+            "accountId" : "1e079fd4-f240-11ee-0a80-0681000027c7",
+            "owner" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/1e2c45eb-f240-11ee-0a80-16d90003dc52",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/employee/metadata",
+                "type" : "employee",
+                "mediaType" : "application/json",
+                "uuidHref" : "https://online.moysklad.ru/app/#employee/edit?id=1e2c45eb-f240-11ee-0a80-16d90003dc52"
+              }
+            },
+            "shared" : true,
+            "group" : {
+              "meta" : {
+                "href" : "https://api.moysklad.ru/api/remap/1.2/entity/group/1e081f6b-f240-11ee-0a80-0681000027c8",
+                "metadataHref" : "https://api.moysklad.ru/api/remap/1.2/entity/group/metadata",
+                "type" : "group",
+                "mediaType" : "application/json"
+              }
+            },
+            "updated" : "2025-09-24 10:49:31.778",
+            "name" : "25 Обычная Группа 1 ур ABC",
+            "externalCode" : "03ShrEO2hA-5Hh3A03jMa2",
+            "archived" : false,
+            "pathName" : "",
+            "useParentVat" : true
+          } ]
+        }
+  recorded_at: Fri, 14 Nov 2025 08:21:27 GMT
+recorded_with: VCR 6.0.0

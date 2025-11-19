@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.moysklad.ru/api/remap/1.2/entity/productfolder?limit=1000
+    uri: https://api.moysklad.ru/api/remap/1.2/entity/productfolder?limit=1000&offset=0
     body:
       encoding: US-ASCII
       string: ''
