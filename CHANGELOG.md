@@ -1,6 +1,11 @@
+# v0.4.1
+
+* 2025-11-19 [e6cd29c](../../commit/e6cd29c) - __(git2-railsc)__ Release 0.4.1 
+* 2025-11-14 [f7fc159](../../commit/f7fc159) - __(Mikhail Nelaev)__ fix: fixes Invalid rows size error 
+https://jira.railsc.ru/browse/GOODS-4871
+
 # v0.4.0
 
-* 2025-11-12 [677922b](../../commit/677922b) - __(git3-railsc)__ Release 0.4.0 
 * 2025-09-09 [954e1c9](../../commit/954e1c9) - __(Mikhail Nelaev)__ feat: загрузка товаров по категориям и загрузчик категорий 
 https://jira.railsc.ru/browse/GOODS-4783
 
