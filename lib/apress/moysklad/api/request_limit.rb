@@ -2,6 +2,8 @@ module Apress
   module Moysklad
     module Api
       class RequestLimit
+        REQUEST_COST = 4
+
         attr_reader :headers
 
         def initialize(headers)
@@ -9,7 +11,7 @@ module Apress
         end
 
         def call
-          return if rate_limit.nil? || rate_limit.nonzero?
+          return if rate_limit.nil? || rate_limit >= REQUEST_COST
 
           sleep(reset_time)
         end
