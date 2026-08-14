@@ -34,5 +34,15 @@ describe Apress::Moysklad::Api::RequestLimit do
         is_expected
       end
     end
+
+    context 'when rate_limit is less than request cost' do
+      let(:headers) { {'x-lognex-reset' => '60000', 'x-ratelimit-remaining' => '3'} }
+
+      it do
+        expect(service).to receive(:sleep).with(60)
+
+        is_expected
+      end
+    end
   end
 end
