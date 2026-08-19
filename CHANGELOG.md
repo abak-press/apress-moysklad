@@ -1,6 +1,11 @@
+# v0.5.0
+
+* 2026-08-19 [d9bf50a](../../commit/d9bf50a) - __(git3-railsc)__ Release 0.5.0 
+* 2026-08-14 [cb3eb94](../../commit/cb3eb94) - __(Mikhail Nelaev)__ feat: set request cost in requests limiter 
+https://jira.railsc.ru/browse/GOODS-5174
+
 # v0.4.1
 
-* 2025-11-19 [e6cd29c](../../commit/e6cd29c) - __(git2-railsc)__ Release 0.4.1 
 * 2025-11-14 [f7fc159](../../commit/f7fc159) - __(Mikhail Nelaev)__ fix: fixes Invalid rows size error 
 https://jira.railsc.ru/browse/GOODS-4871
 
