@@ -39,7 +39,7 @@ module Apress
                          DEFAULT_RESET_TIME
                        end
 
-          reset_time / 1_000
+          reset_time.to_f / 1_000
         end
 
         # Число запросов, которые можно отправить до получения 429 ошибки
