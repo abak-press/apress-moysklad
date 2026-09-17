@@ -43,6 +43,57 @@ describe Apress::Moysklad::Api::RequestLimit do
 
         is_expected
       end
+
+      context 'when x-lognex-reset is 0, but x-lognex-retry-after and x-lognex-retry-timeinterval is present' do
+        let(:headers) do
+          {
+            'x-lognex-reset' => '0',
+            'x-lognex-retry-after' => '1000',
+            'x-lognex-retry-timeinterval' => '2000',
+            'x-ratelimit-remaining' => '3'
+          }
+        end
+
+        it do
+          expect(service).to receive(:sleep).with(1)
+
+          is_expected
+        end
+      end
+
+      context 'when x-lognex-reset and x-lognex-retry-after is 0, but x-lognex-retry-timeinterval is present' do
+        let(:headers) do
+          {
+            'x-lognex-reset' => '0',
+            'x-lognex-retry-after' => '0',
+            'x-lognex-retry-timeinterval' => '2000',
+            'x-ratelimit-remaining' => '2'
+          }
+        end
+
+        it do
+          expect(service).to receive(:sleep).with(2)
+
+          is_expected
+        end
+      end
+
+      context 'when x-lognex-reset and x-lognex-retry-after and x-lognex-retry-timeinterval is 0' do
+        let(:headers) do
+          {
+            'x-lognex-reset' => '0',
+            'x-lognex-retry-after' => '0',
+            'x-lognex-retry-timeinterval' => '0',
+            'x-ratelimit-remaining' => '1'
+          }
+        end
+
+        it do
+          expect(service).to receive(:sleep).with(3)
+
+          is_expected
+        end
+      end
     end
   end
 end
